@@ -14,7 +14,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
 /**** mobile ****/
 /*** container ***/
-.container { display:flex; flex-wrap:wrap; }
+.container { width:100%; display:flex; flex-wrap:wrap; }
 
 /** header **/
 .container header { background-color:rgba(255, 255, 255, 0.8); width:100%; height:50px; padding:5px 10px; box-sizing:border-box; position:fixed; z-index:9999; }
@@ -91,7 +91,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 .container .main .multi { width:100%; background-color:#f7f7f7; padding:75px 0; box-sizing:border-box; }
     .container .main .multi h2 { margin-bottom:75px; }
     .container .main .multi ul { width:100%; display:flex; flex-direction:column; align-content:center; }
-    .container .main .multi ul li { width:305px; height:170px;background-color:#fff; margin:0 auto; margin-bottom:15px; box-shadow:0px 0px 10px 5px rgba(228, 228, 228, 0.582); }
+    .container .main .multi ul li { width:305px; height:170px;background-color:#fff; margin:0 auto; margin-bottom:15px; box-shadow:0px 0px 10px rgba(228, 228, 228, 0.582); }
     .container .main .multi ul li:first-child { width:305px; height:292px; }
     .container .main .multi ul li:last-child { width:305px; height:333px; }
     .container .main .multi ul li a { display:block; width:100%; height:100%; padding:28px 0; box-sizing:border-box;  text-align:center; }
@@ -150,10 +150,15 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     .container .main .info ul li:last-child p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; margin-left:74px; font-size:15px; margin-bottom:13px; }
 
 /** footer **/
-.container footer { width:100%; }
+.container footer { width:100%; display:flex; flex-direction:column; }
     .container footer p { padding:33px 0; box-sizing:border-box; width:100%; text-align:center; font-size:13px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
     .container footer p span { font-weight:500; color:#0063e6; }
 
+    .container footer p:last-of-type, .container footer p:last-of-type span { color:rgb(136, 136, 136); }
+    .container footer p:last-of-type { padding:0 10px; line-height:1.4; }
+
+    .container footer ul { display:flex; margin:33px auto; font-size:13px; }
+        .container footer ul li:first-child { margin-right:15px; }
 
 /**** tablet ****/
 @media (min-width:767px) {
@@ -323,11 +328,12 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .multi h2 { margin-bottom:135px; }
         .container .main .multi ul { width:1180px; }
 
+            .container .main .multi ul li { transition:0.5s; }
+            .container .main .multi ul li:hover { transform:scale(1.04); }
             .container .main .multi ul li a h3 { text-align:left; }
+            .container .main .multi ul li a:hover div h3 { transition:0.6s; color:#0063e6; }
             .container .main .multi ul li a p:first-of-type { font-size:16px; text-align:left; }
             .container .main .multi ul li a p:last-of-type { margin:0; }
-            
-            .container .main .multi ul .video a, .container .main .multi ul .news a { display:flex; flex-direction:column; justify-content:center; align-items:center; }
             
             .container .main .multi ul li:first-child { height:367px; margin:0 0 32px 0; }
             .container .main .multi ul li:first-child > div { width:50%; }
@@ -335,7 +341,8 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .multi ul .song a { position:relative; }
             .container .main .multi ul .song a div { position:absolute; top:50%; left:72px; transform:translateY(-50%); }
             .container .main .multi ul .song a div h3 { font-size:35px; background-position:0 0; }
-            .container .main .multi ul li a:hover div h3 { transition:0.6s; color:#0063e6; }
+
+            .container .main .multi ul .video a, .container .main .multi ul .news a { display:flex; flex-direction:column; justify-content:center; align-items:center; }
 
             .container .main .multi ul .video { margin-bottom:32px; }
             .container .main .multi ul .video a h3 { font-size:35px; text-align:center; background-position:0 0; }
@@ -352,8 +359,8 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .notice h2 { margin-bottom:135px; }
         .container .main .notice ul { width:75%; margin:0 auto; }
 
-        .container .main .notice ul li { padding:12px 0 12px 24px; box-sizing:border-box; width:100%; border-bottom:1px solid #e8e8e8; background:url(../images/notice_dot.png) no-repeat 0.5% 50%; background-size:6px; }
-        .container .main .notice ul li:hover { cursor:pointer; }
+        .container .main .notice ul li { padding:12px 0 12px 24px; box-sizing:border-box; width:100%; border-bottom:1px solid #e8e8e8; background:url(../images/notice_dot.png) no-repeat 0.5% 50%; background-size:6px; transition:0.2s; }
+        .container .main .notice ul li:hover { color:#0050be; cursor:pointer; }
         .container .main .notice ul li:nth-of-type(3) { display:none; }
         .container .main .notice ul .hidden { display:flex; }
         .container .main .notice ul .hidden p:last-of-type { margin-left:auto; }
@@ -380,6 +387,11 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .info ul li:first-child p, .container .main .info ul li:last-child p { width:100%; margin-left:119px; font-size:20px; }
 
     /* footer */
-    .container footer { height:90px; display:flex; justify-content:center; align-items:center; }
-        .container footer p { font-size:20px; }
+    .container footer { justify-content:center; align-items:center; }
+        .container footer p { font-size:18px; }
+
+        .container footer p:last-of-type { font-size:15px; }
+
+        .container footer ul { font-size:15px; }
+            .container footer ul li a:hover { font-weight:bold; }
 }

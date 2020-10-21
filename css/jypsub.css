@@ -52,9 +52,15 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .txt3 img { width:123px; }
 
 /** footer **/
-.container footer { background-color:#f7f7f7; width:100%; }
-    .container footer p { padding:33px 0; box-sizing:border-box; text-align:center; font-size:13px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
+.container footer { background-color:#f9f9f9; width:100%; display:flex; flex-direction:column; }
+    .container footer p { padding:33px 0; box-sizing:border-box; width:100%; text-align:center; font-size:13px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
     .container footer p span { font-weight:500; color:#0063e6; }
+
+    .container footer p:last-of-type, .container footer p:last-of-type span { color:rgb(136, 136, 136); }
+    .container footer p:last-of-type { padding:0 10px; line-height:1.4; }
+
+    .container footer ul { display:flex; margin:33px auto; font-size:13px; }
+        .container footer ul li:first-child { margin-right:15px; }
 
 
 /**** PC ****/
@@ -101,6 +107,11 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .txt3 img { width:296px; }
 
     /** footer **/
-    .container footer { height:90px; display:flex; justify-content:center; align-items:center; }
-        .container footer p { font-size:20px; }
+    .container footer { justify-content:center; align-items:center; }
+        .container footer p { font-size:18px; }
+
+        .container footer p:last-of-type { font-size:15px; }
+
+        .container footer ul { font-size:15px; }
+            .container footer ul li a:hover { font-weight:bold; }
 }
