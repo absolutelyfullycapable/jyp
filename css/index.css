@@ -5,7 +5,7 @@ body { margin:0; font-family:'Noto Sans KR',"Helvetica Neue","Apple SD Gothic Ne
 ul, li { margin:0; padding:0; list-style:none; }
 a { color:#000; text-decoration:none; }
 p { margin:0; }
-h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:700;}
+h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:700; }
 
 ::selection { background-color:#0063e6; color:#fff; }
 ::-moz-selection { background-color:#0063e6; color:#fff; }
@@ -16,56 +16,73 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 /*** container ***/
 .container { width:100%; display:flex; flex-wrap:wrap; }
 
-/** header **/
-.container header { background-color:rgba(255, 255, 255, 0.8); width:100%; height:50px; padding:5px 10px; box-sizing:border-box; position:fixed; z-index:9999; }
-    .container header h1 { text-indent:-9999px; background:url(../images/jyp.png) no-repeat; background-size:cover; width:40px; margin:0; }
-    .container header .nav { display:none; width:100%; background-color:rgba(255, 255, 255, 0.5); position:absolute; top:50px; left:0; z-index:999; }
-    .container header .nav li a { display:block; width:100%; padding:10px; box-sizing:border-box; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; font-size:15px; }
-    .container header .lang { display:none; }
-    .container header .mobile_btn { width:20px; height:20px; background:url(../images/menu.png) no-repeat 50% 50%; background-size:cover; position:absolute; top:50%; right:10px; transform:translateY(-50%); }
+    /** header **/
+    .container header { background-color:rgba(255, 255, 255, 0.8); width:100%; height:50px; padding:5px 10px; box-sizing:border-box; position:fixed; z-index:99; }
+        .container header h1 { width:40px; height:40px; margin:0; }
+            .container header h1 a { display:block; width:100%; height:100%; }
+                .container header h1 a img { width:100%; height:100%; }
 
+        .container header .nav_PC { display:none; width:100%; background-color:rgba(255, 255, 255, 0.5); position:absolute; top:50px; left:0; z-index:999; }
+            .container header .nav_PC li a { display:block; width:100%; padding:10px; box-sizing:border-box; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; font-size:15px; }
 
-/** main **/
-.container .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
+        .container header .lang { display:none; }
+        .container header .mobile_btn { width:20px; height:20px; background:url(../images/menu.png) no-repeat 50% 50%; background-size:cover; position:absolute; top:50%; right:10px; transform:translateY(-50%); }
 
-/* slide  */
-.container .main .slide { width:100%; height:680px; background:url(../images/slide.jpg) no-repeat 50% 5%; background-size:1710px 1140px; display:flex; justify-content:center; align-items:center; position:relative; }
-    .container .main .slide .txt { width:80%; color:#fff; }
-        .container .main .slide .txt h2 { width:300px; height:30px; text-align:center; background:url(../images/underline.png) no-repeat 50% 100%; margin:0 auto; }
-        .container .main .slide .txt p { text-align:center; font-size:14px; line-height:1.4; margin:20px 0; }
-        .container .main .slide .txt span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
-        .container .main .slide .txt .hidden { display:none; }
-        .container .main .slide .txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:140px; height:40px; margin:0 auto; background-color:rgba(255, 255, 255, 0.235); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+    /** mobile navigation **/
+    .container nav { width:100%; background-color:#0063e6; position:fixed; top:0; left:0; padding:20px; box-sizing:border-box; opacity:0; transition:0.5s; }
+    .container nav.show { z-index:999; opacity:1; }
+        .container nav div { position:absolute; top:15px; right:10px; }
+            .container nav div img { width:20px; height:20px; }
+
+        .container nav ul { width:100%; margin-top:30px; }
+            .container nav ul li { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:20px; margin-bottom:30px; }
+                .container nav ul li a { color:#fff; }
+
+    /** main **/
+    .container .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
+
+    /* slide  */
+    .container .main .slide { width:100%; height:680px; background:url(../images/slide.jpg) no-repeat 50% 5%; background-size:1710px 1140px; display:flex; justify-content:center; align-items:center; position:relative; }
+        .container .main .slide .txt { width:80%; color:#fff; }
+            .container .main .slide .txt h2 { width:300px; height:30px; text-align:center; background:url(../images/underline.png) no-repeat 50% 100%; margin:0 auto; }
+            .container .main .slide .txt p { text-align:center; font-size:14px; line-height:1.4; margin:20px 0; }
+            .container .main .slide .txt span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
+            .container .main .slide .txt .hidden { display:none; }
+            .container .main .slide .txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:140px; height:40px; margin:0 auto; background-color:rgba(255, 255, 255, 0.235); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+
         .container .main .slide .btn_g { display:flex; width:69px; margin:0 auto; position:absolute; bottom:38px; right:50%; transform:translateX(50%); }
-        .container .main .slide .btn_g div { width:19px; height:6px; background-color:#fff; cursor:pointer; }
-        .container .main .slide .btn_g .btn1 { background-color:#0050be; }
-        .container .main .slide .btn_g .btn2 { margin:0 7px; }
+            .container .main .slide .btn_g div { width:19px; height:6px; background-color:#fff; cursor:pointer; }
+            .container .main .slide .btn_g .btn1 { background-color:#0050be; }
+            .container .main .slide .btn_g .btn2 { margin:0 7px; }
 
-/* value */
-.container .main .value { width:100%; padding:64px 0 24px; box-sizing:border-box; }
-    .container .main .value ul { display:flex; flex-wrap:wrap; width:100%; }
-        .container .main .value ul li { width:100%; height:197px; border-bottom:1px solid #e8e8e8; padding:75px 70px; box-sizing:border-box; }
-        .container .main .value ul li div { margin:0 auto; }
-        .container .main .value ul li div p { font-size:14px; }
-        .container .main .value ul li div p span { font-family: 'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; font-size:19px; display:block; }
-        .container .main .value ul li:last-child { padding:75px 39px; border-bottom:none; }
-        .container .main .value ul li:last-child p span { line-height:1.4; }
+    /* value */
+    .container .main .value { width:100%; padding:64px 0 24px; box-sizing:border-box; }
+        .container .main .value ul { display:flex; flex-wrap:wrap; width:100%; }
+            .container .main .value ul li { width:100%; height:197px; border-bottom:1px solid #e8e8e8; padding:75px 70px; box-sizing:border-box; }
+            .container .main .value ul li div { margin:0 auto; }
+            .container .main .value ul li div p { font-size:14px; }
+            .container .main .value ul li div p span { font-family: 'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; font-size:19px; display:block; }
+            .container .main .value ul li:last-child { padding:75px 39px; border-bottom:none; }
+            .container .main .value ul li:last-child p span { line-height:1.4; }
 
-        .container .main .value ul li .think { width:219px; background:url(../images/think.png) no-repeat; background-size:54px; }
-        .container .main .value ul li p { margin-left:94px; }
-        .container .main .value ul li .act { width:206px; background:url(../images/act.png) no-repeat; background-size:54px; }
-        .container .main .value ul li .improve { width:270px; background:url(../images/improve.png) no-repeat; background-size:54px; }
+            .container .main .value ul li .think { width:219px; background:url(../images/think.png) no-repeat; background-size:54px; }
+            .container .main .value ul li p { margin-left:94px; }
+            .container .main .value ul li .act { width:206px; background:url(../images/act.png) no-repeat; background-size:54px; }
+            .container .main .value ul li .improve { width:270px; background:url(../images/improve.png) no-repeat; background-size:54px; }
 
-/* history */
-.container .main .history { width:100%; background-color:#f6f6f6; }
-    .container .main .history .corp { width:100%; height:411px; background:url(../images/cor_M.jpg) no-repeat 50% 50%; background-size:cover; }
-    .container .main .history > img { display:none; }
-    .container .main .history .corp_txt { margin:0 auto; padding:0 30px; box-sizing:border-box; width:370px; height:444px; display:flex; flex-direction:column; justify-content:center; }
-    .container .main .history .corp_txt h2 { color:#0063e6; font-size:40px; }
-    .container .main .history .corp_txt .hidden { display:none; }
-    .container .main .history .corp_txt p { font-size:13.5px; margin:35px 0; }
-    .container .main .history .corp_txt p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
-    .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:31px; background-color:rgb(0, 100, 230, 0.9); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+    /* history */
+    .container .main .history { width:100%; background-color:#f6f6f6; }
+        .container .main .history .corp { width:100%; height:411px; background:url(../images/cor_M.jpg) no-repeat 50% 50%; background-size:cover; }
+        .container .main .history > img { display:none; }
+
+        .container .main .history .corp_txt { margin:0 auto; padding:0 30px; box-sizing:border-box; width:370px; height:444px; display:flex; flex-direction:column; justify-content:center; }
+            .container .main .history .corp_txt h2 { color:#0063e6; font-size:40px; }
+            .container .main .history .corp_txt .hidden { display:none; }
+            
+            .container .main .history .corp_txt p { font-size:13.5px; margin:35px 0; }
+                .container .main .history .corp_txt p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
+
+            .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:31px; background-color:rgb(0, 100, 230, 0.9); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
 /* artist */
 .container .main .artist { width:100%; padding:81px 53px 130px; box-sizing:border-box; position:relative; }
@@ -228,12 +245,13 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     /*** container ***/
     .container { position:relative; }
 
-    /** heaer **/
+    /** header **/
     .container header { height:60px; background-color:rgba(255, 255, 255, 0.7); box-sizing:border-box; position:fixed; z-index:999; display:flex; }
         .container header h1 { background-size:cover; width:48px; height:48px; position:absolute; top:50%; left:217px; transform:translateY(-50%); }
+        .container header h1 a { display:block; width:100%; height:100%; }
         
-        .container header .nav { display:flex; width:30%; background-color:transparent; position:absolute; top:50%; left:280px; transform:translateY(-50%); z-index:999; }
-        .container header .nav li a { display:block; width:100%; padding:10px; margin-left:74px; box-sizing:border-box; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:14px; }
+        .container header .nav_PC { display:flex; width:30%; background-color:transparent; position:absolute; top:50%; left:280px; transform:translateY(-50%); z-index:999; }
+        .container header .nav_PC li a { display:block; width:100%; padding:10px; margin-left:74px; box-sizing:border-box; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:14px; }
 
         .container header .lang { display:flex; position:absolute; top:50%; right:217px; transform:translateY(-50%); }
         .container header .lang li { display:flex; justify-content:center; align-items:center; font-size:12px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
@@ -242,7 +260,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container header .lang li a { display:block; }
         .container header .lang li:first-child a { font-weight:600; color:#348ccc; }
 
-        .container header .nav li:hover a, .container header .lang li:hover a { color:#348ccc; }
+        .container header .nav_PC li:hover a, .container header .lang li:hover a { color:#348ccc; }
 
         .container header .mobile_btn { display:none; }
 
