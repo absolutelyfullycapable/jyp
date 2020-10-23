@@ -42,11 +42,11 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 .container .main { width:100%; }
     .container .main section p { font-size:14px; }
     .container .main section .hidden { display:none; }
-    .container .main section p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+        .container .main section p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
     /* main image */
     .container .main .main_img { width:100%; height:447px; background:url(../images/sub_main.jpg) no-repeat 50% 50%; background-size:cover; display:flex; justify-content:center; align-items:center; }
-    .container .main .main_img h2 { font-size:35px; color:#fff; background:url(../images/underline.png) no-repeat 0 100%; line-height:1.5; }
+        .container .main .main_img h2 { font-size:35px; color:#fff; background:url(../images/underline.png) no-repeat 0 100%; line-height:1.5; }
 
     /* main txt */
     .container .main .txt1 { padding:86px 30px 78px; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:34px; }
@@ -68,7 +68,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 /** footer **/
 .container footer { background-color:#f9f9f9; width:100%; display:flex; flex-direction:column; }
     .container footer p { padding:33px 0; box-sizing:border-box; width:100%; text-align:center; font-size:13px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
-    .container footer p span { font-weight:500; color:#0063e6; }
+        .container footer p span { font-weight:500; color:#0063e6; }
 
     .container footer p:last-of-type, .container footer p:last-of-type span { color:rgb(136, 136, 136); }
     .container footer p:last-of-type { padding:0 10px; line-height:1.4; }
@@ -85,14 +85,15 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container header h1 a, .container header h1 a img { display:block; width:100%; height:100%; }
         
         .container header .nav_PC { display:flex; width:30%; background-color:transparent; position:absolute; top:50%; left:280px; transform:translateY(-50%); z-index:999; }
-        .container header .nav_PC li a { display:block; width:100%; padding:10px; margin-left:74px; box-sizing:border-box; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:14px; text-align:left; transition:0.2s; }
+            .container header .nav_PC li a { display:block; width:100%; padding:10px; margin-left:74px; box-sizing:border-box; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:14px; text-align:left; transition:0.2s; }
 
         .container header .lang { display:flex; position:absolute; top:50%; right:217px; transform:translateY(-50%); }
-        .container header .lang li { display:flex; justify-content:center; align-items:center; font-size:12px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
-        .container header .lang li:after { content:"|"; margin:0 15px; font-weight:300; }
-        .container header .lang li:last-child:after { display:none; }
-        .container header .lang li a { display:block; transition:0.2s; }
-        .container header .lang li:first-child a { font-weight:600; color:#348ccc; }
+            .container header .lang li { display:flex; justify-content:center; align-items:center; font-size:12px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+            .container header .lang li:after { content:"|"; margin:0 15px; font-weight:300; }
+
+            .container header .lang li:last-child:after { display:none; }
+                .container header .lang li a { display:block; transition:0.2s; }
+                .container header .lang li:first-child a { font-weight:600; color:#348ccc; }
 
         .container header .nav_PC li:hover a, .container header .lang li:hover a { color:#348ccc; }
 
@@ -110,6 +111,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     /* main txt */
     .container .main .txt1 { padding:168px 0 138px; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:83px; }
         .container .main .txt1 h2 { font-size:50px; background-size:703px; margin-bottom:94px; }
+        
         .container .main .txt1 img:first-of-type { display:none; }
         .container .main .txt1 img:last-of-type { display:block; width:1000px; margin:0 auto 138px; }
 
