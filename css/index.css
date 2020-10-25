@@ -173,7 +173,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
 
 /** map **/
-.container #map { width:100%; height:500px; } 
+.container #map { width:100%; height:300px; } 
 
 
 
@@ -259,6 +259,8 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     .container .main .info ul li:first-child{ width:40%; margin:0; }
     .container .main .info ul li:last-child { width:30%; margin:0; }
 }
+
+
 
 /* pc */
 @media (min-width:1280px) {
@@ -430,6 +432,10 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .info ul li:last-child { width:30%; background-size:55px; }
             .container .main .info ul li:first-child p, .container .main .info ul li:last-child p { width:100%; margin-left:119px; font-size:20px; }
 
-    /* footer */
-    .container footer { font-size:15.5px; padding:50px 235px; }
+/** map **/
+.container #map { height:500px; }
+
+
+/** footer **/
+.container footer { font-size:15.5px; padding:50px 235px; }
 }
