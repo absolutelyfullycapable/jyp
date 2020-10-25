@@ -65,6 +65,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .txt3 p { margin-bottom:78px; }
         .container .main .txt3 img { width:123px; }
 
+
 /** footer **/
 .container footer { width:100%; padding:30px 25px; box-sizing:border-box; font-size:14px; background-color:#f9f9f9; }
         .container footer ul { display:flex; }
