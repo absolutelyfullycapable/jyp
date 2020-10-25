@@ -250,7 +250,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 }
 
 /* pc */
-@media (min-width:1400px) {
+@media (min-width:1280px) {
     /*** container ***/
     .container { position:relative; }
 
