@@ -261,7 +261,7 @@
                 </section> <!-- info -->
             </div> <!-- main -->
 
-            <div id="map" style="width:100%; height:350px;"></div> <!-- map -->
+            <div id="map"></div> <!-- map -->
 
             <footer>
                 <ul class="jyp_link">
@@ -280,6 +280,7 @@
             </footer> <!-- footer -->
         </div> <!-- container -->
 
+        <!-- 카카오맵 script -->
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c4d5bfb2603aff3b88fa2b05fb833783&libraries=services"></script>
         <script>
             var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
@@ -288,36 +289,35 @@
                     level: 3 // 지도의 확대 레벨
                 };  
             
-            // 지도를 생성합니다    
+            // 지도 생성
             var map = new kakao.maps.Map(mapContainer, mapOption); 
             
-            // 주소-좌표 변환 객체를 생성합니다
+            // 주소-좌표 변환 객체 생성
             var geocoder = new kakao.maps.services.Geocoder();
             
-            // 주소로 좌표를 검색합니다
-            geocoder.addressSearch('제주특별자치도 제주시 첨단로 242', function(result, status) {
+            // 주소로 좌표 검색
+            geocoder.addressSearch('서울특별시 강동구 강동대로 205', function(result, status) {
             
-                // 정상적으로 검색이 완료됐으면 
+                // 정상적으로 검색이 완료됐으면
                  if (status === kakao.maps.services.Status.OK) {
-            
                     var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
             
-                    // 결과값으로 받은 위치를 마커로 표시합니다
+                    // 결과값으로 받은 위치를 마커로 표시
                     var marker = new kakao.maps.Marker({
                         map: map,
                         position: coords
                     });
             
-                    // 인포윈도우로 장소에 대한 설명을 표시합니다
+                    // 인포윈도우로 장소에 대한 설명을 표시
                     var infowindow = new kakao.maps.InfoWindow({
-                        content: '<div style="width:150px;text-align:center;padding:6px 0;">우리회사</div>'
+                        content: '<div style="width:150px;text-align:center;padding:6px 0;">JYP Entertainment</div>'
                     });
                     infowindow.open(map, marker);
             
-                    // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+                    // 지도의 중심을 결과값으로 받은 위치로 이동시킴
                     map.setCenter(coords);
                 } 
             });    
-            </script>
+        </script>
     </body>
 </html>

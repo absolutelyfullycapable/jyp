@@ -84,92 +84,97 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
             .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:31px; background-color:rgb(0, 100, 230, 0.9); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
-/* artist */
-.container .main .artist { width:100%; padding:81px 53px 130px; box-sizing:border-box; position:relative; }
-    .container .main .artist h2 { margin-bottom:81px; }
+    /* artist */
+    .container .main .artist { width:100%; padding:81px 53px 130px; box-sizing:border-box; position:relative; }
+        .container .main .artist h2 { margin-bottom:81px; }
 
-    .container .main .artist ul { width:269px; margin:0 auto; display:flex; flex-wrap:wrap; }
-        .container .main .artist ul li { width:128px; height:112px; border:1px solid #d8d8d8;}
-            .container .main .artist ul li a { display:block; width:100%; height:100%;  }
+        .container .main .artist ul { width:269px; margin:0 auto; display:flex; flex-wrap:wrap; }
+            .container .main .artist ul li { width:128px; height:112px; border:1px solid #d8d8d8;}
+                .container .main .artist ul li a { display:block; width:100%; height:100%;  }
 
-        .container .main .artist ul .jyp { margin:0 9px 8px 0; background:url(../images/jyp.png) no-repeat 50% 50%; background-size:50px; }
-        .container .main .artist ul .twopm { background:url(../images/2pm.png) no-repeat 50% 50%; background-size:82px; }
-        .container .main .artist ul .jj { margin:0 9px 8px 0; background:url(../images/jj.png) no-repeat 50% 50%; background-size:61px; }
-        .container .main .artist ul .got7 { background:url(../images/got7.png) no-repeat 50% 50%; background-size:80px; }
-        .container .main .artist ul .twice { margin:0 9px 8px 0; background:url(../images/twice.png) no-repeat 50% 50%; background-size:51px; }
-        .container .main .artist ul .day6 { background:url(../images/day6.png) no-repeat 50% 50%; background-size:87px; }
-        .container .main .artist ul .straykids { margin:0 9px 8px 0; background:url(../images/straykids.png) no-repeat 50% 50%; background-size:111px; }
-        .container .main .artist ul .itzy { background:url(../images/itzy.png) no-repeat 50% 50%; background-size:45px; }
+            .container .main .artist ul .jyp { margin:0 9px 8px 0; background:url(../images/jyp.png) no-repeat 50% 50%; background-size:50px; }
+            .container .main .artist ul .twopm { background:url(../images/2pm.png) no-repeat 50% 50%; background-size:82px; }
+            .container .main .artist ul .jj { margin:0 9px 8px 0; background:url(../images/jj.png) no-repeat 50% 50%; background-size:61px; }
+            .container .main .artist ul .got7 { background:url(../images/got7.png) no-repeat 50% 50%; background-size:80px; }
+            .container .main .artist ul .twice { margin:0 9px 8px 0; background:url(../images/twice.png) no-repeat 50% 50%; background-size:51px; }
+            .container .main .artist ul .day6 { background:url(../images/day6.png) no-repeat 50% 50%; background-size:87px; }
+            .container .main .artist ul .straykids { margin:0 9px 8px 0; background:url(../images/straykids.png) no-repeat 50% 50%; background-size:111px; }
+            .container .main .artist ul .itzy { background:url(../images/itzy.png) no-repeat 50% 50%; background-size:45px; }
+            
+            .container .main .artist .btn_g { display:flex; width:45px; margin:0 auto; position:absolute; bottom:90px; right:50%; transform:translateX(50%); }
+                .container .main .artist .btn_g div { width:19px; height:5px; cursor:pointer; }
+                .container .main .artist .btn_g .btn1 { background-color:#348ccc; }
+                .container .main .artist .btn_g .btn2 { margin:0 7px;  background-color:#d2d2d2; }
+
+    /* multi */
+    .container .main .multi { width:100%; background-color:#f7f7f7; padding:75px 0; box-sizing:border-box; }
+        .container .main .multi h2 { margin-bottom:75px; }
+
+        .container .main .multi ul { width:100%; display:flex; flex-direction:column; align-content:center; }
+            .container .main .multi ul li { width:305px; height:170px;background-color:#fff; margin:0 auto; margin-bottom:15px; box-shadow:0px 0px 10px rgba(228, 228, 228, 0.582); }
+            .container .main .multi ul li:first-child { width:305px; height:292px; }
+            .container .main .multi ul li:last-child { width:305px; height:333px; }
+                .container .main .multi ul li a { display:block; width:100%; height:100%; padding:28px 0; box-sizing:border-box;  text-align:center; }
+                    .container .main .multi ul li a h3 { background:url(../images/dot.png) no-repeat; background-size:5px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; text-align:center; font-size:22px; margin:0 0 28px; }
+
+                .container .main .multi ul li a p:first-of-type { margin-bottom:28px; font-size:14px; }
+                    .container .main .multi ul li a p:first-of-type span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+                .container .main .multi ul li a p:last-of-type { background:url(../images/direc.png) no-repeat 100% 70%; background-size:15px; margin:0 auto; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; text-align:left; font-size:14px;  }
         
-        .container .main .artist .btn_g { display:flex; width:45px; margin:0 auto; position:absolute; bottom:90px; right:50%; transform:translateX(50%); }
-            .container .main .artist .btn_g div { width:19px; height:5px; cursor:pointer; }
-            .container .main .artist .btn_g .btn1 { background-color:#348ccc; }
-            .container .main .artist .btn_g .btn2 { margin:0 7px;  background-color:#d2d2d2; }
-
-/* multi */
-.container .main .multi { width:100%; background-color:#f7f7f7; padding:75px 0; box-sizing:border-box; }
-    .container .main .multi h2 { margin-bottom:75px; }
-
-    .container .main .multi ul { width:100%; display:flex; flex-direction:column; align-content:center; }
-        .container .main .multi ul li { width:305px; height:170px;background-color:#fff; margin:0 auto; margin-bottom:15px; box-shadow:0px 0px 10px rgba(228, 228, 228, 0.582); }
-        .container .main .multi ul li:first-child { width:305px; height:292px; }
-        .container .main .multi ul li:last-child { width:305px; height:333px; }
-            .container .main .multi ul li a { display:block; width:100%; height:100%; padding:28px 0; box-sizing:border-box;  text-align:center; }
-                .container .main .multi ul li a h3 { background:url(../images/dot.png) no-repeat; background-size:5px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; text-align:center; font-size:22px; margin:0 0 28px; }
-
-            .container .main .multi ul li a p:first-of-type { margin-bottom:28px; font-size:14px; }
-                .container .main .multi ul li a p:first-of-type span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
-            .container .main .multi ul li a p:last-of-type { background:url(../images/direc.png) no-repeat 100% 70%; background-size:15px; margin:0 auto; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; text-align:left; font-size:14px;  }
+        .container .main .multi ul .song { background:#fff url(../images/new_song.png) no-repeat; background-position:50% 170%; background-size:290px; }
+            .container .main .multi ul .song a h3 { background-position:25% 0; }
+            .container .main .multi ul .song a p:last-of-type { width:107px; }
     
-    .container .main .multi ul .song { background:#fff url(../images/new_song.png) no-repeat; background-position:50% 170%; background-size:290px; }
-        .container .main .multi ul .song a h3 { background-position:25% 0; }
-        .container .main .multi ul .song a p:last-of-type { width:107px; }
-   
-    .container .main .multi ul .video a h3 { margin-bottom:25px; background-position:24% 0; }
-    .container .main .multi ul .video a p:first-of-type { margin-bottom:25px; }
-    .container .main .multi ul .video a p:last-of-type { width:117px; }
-    
-    .container .main .multi ul .news a h3 { margin-bottom:25px; background-position:27% 0; }
-    .container .main .multi ul .news a p:first-of-type { margin-bottom:25px; }
-    .container .main .multi ul .news a p:last-of-type { width:107px; }
-    
-    .container .main .multi ul .bts { background:#fff url(../images/behind.png) no-repeat; background-position:50% 120%; background-size:204px; }
-    .container .main .multi ul .bts a h3 { background-position:17% 0; }
-    .container .main .multi ul .bts a .hidden { display:none; }
-    .container .main .multi ul .bts a p:last-of-type { width:107px; }
+        .container .main .multi ul .video a h3 { margin-bottom:25px; background-position:24% 0; }
+        .container .main .multi ul .video a p:first-of-type { margin-bottom:25px; }
+        .container .main .multi ul .video a p:last-of-type { width:117px; }
+        
+        .container .main .multi ul .news a h3 { margin-bottom:25px; background-position:27% 0; }
+        .container .main .multi ul .news a p:first-of-type { margin-bottom:25px; }
+        .container .main .multi ul .news a p:last-of-type { width:107px; }
+        
+        .container .main .multi ul .bts { background:#fff url(../images/behind.png) no-repeat; background-position:50% 120%; background-size:204px; }
+        .container .main .multi ul .bts a h3 { background-position:17% 0; }
+        .container .main .multi ul .bts a .hidden { display:none; }
+        .container .main .multi ul .bts a p:last-of-type { width:107px; }
 
-/* notice */
-.container .main .notice { width:100%; padding:75px 23px; box-sizing:border-box; }
-    .container .main .notice h2 { margin-bottom:75px; }
+    /* notice */
+    .container .main .notice { width:100%; padding:75px 23px; box-sizing:border-box; }
+        .container .main .notice h2 { margin-bottom:75px; }
 
-    .container .main .notice ul { width:100%; }
-        .container .main .notice ul li { padding:12px 0 12px 24px; box-sizing:border-box; width:100%; border-bottom:1px solid #e8e8e8; background:url(../images/notice_dot.png) no-repeat 2% 50%; background-size:6px; }
-        .container .main .notice ul .hidden { display:none; }
-            .container .main .notice ul li p { font-size:14px; }
-                .container .main .notice ul li p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
-            .container .main .notice ul li p:last-of-type { display:none; }
+        .container .main .notice ul { width:100%; }
+            .container .main .notice ul li { padding:12px 0 12px 24px; box-sizing:border-box; width:100%; border-bottom:1px solid #e8e8e8; background:url(../images/notice_dot.png) no-repeat 2% 50%; background-size:6px; }
+            .container .main .notice ul .hidden { display:none; }
+                .container .main .notice ul li p { font-size:14px; }
+                    .container .main .notice ul li p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+                .container .main .notice ul li p:last-of-type { display:none; }
 
-/* recruit */
-.container .main .recruit { width:100%; background:url(../images/recruit.jpg) no-repeat 45% 0; background-size:cover; padding:75px 0; box-sizing: border-box; }
-    .container .main .recruit h2 { color:#fff; margin-bottom:75px; }
-    .container .main .recruit p { color:#fff; padding:0 58px 78px; box-sizing:border-box; text-align:center; font-size:14px; }
-    .container .main .recruit .hidden { display:none; }
+    /* recruit */
+    .container .main .recruit { width:100%; background:url(../images/recruit.jpg) no-repeat 45% 0; background-size:cover; padding:75px 0; box-sizing: border-box; }
+        .container .main .recruit h2 { color:#fff; margin-bottom:75px; }
+        .container .main .recruit p { color:#fff; padding:0 58px 78px; box-sizing:border-box; text-align:center; font-size:14px; }
+        .container .main .recruit .hidden { display:none; }
 
-    .container .main .recruit a { display:flex; justify-content:center; align-items:center; font-size:14px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; width:147px; height:39px; margin:0 auto; border-radius:50px; }
-    .container .main .recruit a:first-of-type { border:1px solid #fff; color:#fff; }
-    .container .main .recruit a:last-child { margin-top:10px; background-color:rgba(255, 255, 255, 0.7); border:1px solid rgba(255, 255, 255, 0); color:#0063e6; }
+        .container .main .recruit a { display:flex; justify-content:center; align-items:center; font-size:14px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; width:147px; height:39px; margin:0 auto; border-radius:50px; }
+        .container .main .recruit a:first-of-type { border:1px solid #fff; color:#fff; }
+        .container .main .recruit a:last-child { margin-top:10px; background-color:rgba(255, 255, 255, 0.7); border:1px solid rgba(255, 255, 255, 0); color:#0063e6; }
 
-/* info */
-.container .main .info { width:100%; padding:80px 0; box-sizing:border-box; background-color:#f7f7f7; }
-    .container .main .info ul { width:100%; display:flex; flex-direction:column; align-content:center; }
-        .container .main .info ul li h2 { text-align:center; color:#0063e6; margin-bottom:37px; }
-        .container .main .info ul p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
-    
-    .container .main .info ul li:first-child { width:280px; margin:0 auto 87px; background:url(../images/address.png) no-repeat 1% 100%; background-size:35px; }
-        .container .main .info ul li:first-child p { margin-left:74px; font-size:15px; }
+    /* info */
+    .container .main .info { width:100%; padding:80px 0; box-sizing:border-box; background-color:#f7f7f7; }
+        .container .main .info ul { width:100%; display:flex; flex-direction:column; align-content:center; }
+            .container .main .info ul li h2 { text-align:center; color:#0063e6; margin-bottom:37px; }
+            .container .main .info ul p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
+        
+        .container .main .info ul li:first-child { width:280px; margin:0 auto 87px; background:url(../images/address.png) no-repeat 1% 100%; background-size:35px; }
+            .container .main .info ul li:first-child p { margin-left:74px; font-size:15px; }
 
-    .container .main .info ul li:last-child { width:162px; margin:0 auto; background:url(../images/call.png) no-repeat 1% 100%; background-size:35px; }
-        .container .main .info ul li:last-child p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; margin-left:74px; font-size:15px; margin-bottom:13px; }
+        .container .main .info ul li:last-child { width:162px; margin:0 auto; background:url(../images/call.png) no-repeat 1% 100%; background-size:35px; }
+            .container .main .info ul li:last-child p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; margin-left:74px; font-size:15px; margin-bottom:13px; }
+
+
+/** map **/
+.container #map { width:100%; height:500px; } 
+
 
 
 /** footer **/
