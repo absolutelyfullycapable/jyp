@@ -171,6 +171,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     .container .main .info ul li:last-child { width:162px; margin:0 auto; background:url(../images/call.png) no-repeat 1% 100%; background-size:35px; }
         .container .main .info ul li:last-child p { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; margin-left:74px; font-size:15px; margin-bottom:13px; }
 
+
 /** footer **/
 .container footer { width:100%; display:flex; flex-direction:column; }
     .container footer p { padding:33px 0; box-sizing:border-box; width:100%; text-align:center; font-size:13px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
