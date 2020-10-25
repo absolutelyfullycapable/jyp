@@ -79,10 +79,10 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .history .corp_txt h2 { color:#0063e6; font-size:40px; }
             .container .main .history .corp_txt .hidden { display:none; }
             
-            .container .main .history .corp_txt p { font-size:13.5px; margin:35px 0; }
+            .container .main .history .corp_txt p { font-size:13.5px; line-height:1.5; margin:35px 0; }
                 .container .main .history .corp_txt p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
 
-            .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:31px; background-color:rgb(0, 100, 230, 0.9); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+            .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:40px; background-color:rgb(0, 100, 230, 0.9); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
     /* artist */
     .container .main .artist { width:100%; padding:81px 53px 130px; box-sizing:border-box; position:relative; }
