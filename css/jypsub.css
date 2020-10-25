@@ -66,15 +66,20 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .txt3 img { width:123px; }
 
 /** footer **/
-.container footer { background-color:#f9f9f9; width:100%; display:flex; flex-direction:column; }
-    .container footer p { padding:33px 0; box-sizing:border-box; width:100%; text-align:center; font-size:13px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
-        .container footer p span { font-weight:500; color:#0063e6; }
-
-    .container footer p:last-of-type, .container footer p:last-of-type span { color:rgb(136, 136, 136); }
-    .container footer p:last-of-type { padding:0 10px; line-height:1.4; }
-
-    .container footer ul { display:flex; margin:33px auto; font-size:13px; }
-        .container footer ul li:first-child { margin-right:15px; }
+.container footer { width:100%; padding:30px 25px; box-sizing:border-box; font-size:14px; background-color:#f9f9f9; }
+        .container footer ul { display:flex; }
+            .container footer ul li { margin-right:25px; }
+                .container footer ul li a { font-weight:bold; }
+                .container footer ul li a:hover { text-decoration:underline; }
+        .container footer .jyp_link { margin-bottom:30px; }
+            .container footer .jyp_link li a { color:#0063e6; }
+        
+        .container footer p { text-align:left; }
+        .container footer p:first-of-type { margin-bottom:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; line-height:1.5; }
+            .container footer p:first-of-type span { color:#0063e6; }
+        
+        .container footer p:last-of-type { color:rgb(136, 136, 136); line-height:1.5; margin-bottom:30px; }
+            .container footer p:last-of-type span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
 
 /**** PC ****/
@@ -124,11 +129,5 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .txt3 img { width:296px; }
 
     /** footer **/
-    .container footer { justify-content:center; align-items:center; }
-        .container footer p { font-size:18px; }
-
-        .container footer p:last-of-type { font-size:15px; }
-
-        .container footer ul { font-size:15px; }
-            .container footer ul li a:hover { font-weight:bold; }
+    .container footer { font-size:15.5px; padding:50px 235px; }
 }
