@@ -28,7 +28,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container header .mobile_btn { width:20px; height:20px; background:url(../images/menu.png) no-repeat 50% 50%; background-size:cover; position:absolute; top:50%; right:10px; transform:translateY(-50%); }
 
     /** mobile navigation **/
-    .container nav { width:100%; background-color:#0063e6; position:fixed; top:0; left:0; padding:20px; box-sizing:border-box; opacity:0; transition:0.5s; }
+    .container nav { width:100%; background-color:#0063e6; position:fixed; top:0; left:0; padding:20px; box-sizing:border-box; z-index:-1; opacity:0; transition:0.5s; }
     .container nav.show { z-index:999; opacity:1; }
         .container nav div { position:absolute; top:15px; right:10px; }
             .container nav div img { width:20px; height:20px; }
