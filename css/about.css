@@ -62,6 +62,8 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
                 .container .main .txt1 .goal .improve p:first-of-type { margin-top:15px; }
                 .container .main .txt1 .goal .improve .hidden { display:none; }
 
+            .container .main .txt1 .goal > img { display:none; }
+
     .container .main .txt2 { padding:78px 30px; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:34px; }
         .container .main .txt2 p { margin-bottom:78px; }
         .container .main .txt2 p:nth-of-type(3) { margin-bottom:0; }
@@ -144,4 +146,12 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
     /** footer **/
     .container footer { font-size:15.5px; padding:50px 235px; }
+}
+
+@media (min-width:1800px) {
+    /* main txt */
+    .container .main .txt1 .goal { position:relative; }
+        .container .main .txt1 .goal > img { display:block; width:160px; position:absolute; top:50%; }
+            .container .main .txt1 .goal > img:first-of-type { left:36%; }
+            .container .main .txt1 .goal > img:last-of-type { right:36%; }
 }
