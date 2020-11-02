@@ -38,10 +38,11 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
                 .container nav ul li a { color:#fff; }
 
     /** main **/
-    .container .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
+    .container .main section { width:100%; }
+        .container .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
 
     /* slide  */
-    .container .main .slide { width:100%; height:680px; background:url(../images/slide.jpg) no-repeat 50% 5%; background-size:1710px 1140px; display:flex; justify-content:center; align-items:center; position:relative; }
+    .container .main .slide { height:680px; background:url(../images/slide.jpg) no-repeat 50% 5%; background-size:1710px 1140px; display:flex; justify-content:center; align-items:center; position:relative; }
         .container .main .slide .txt { width:80%; color:#fff; }
             .container .main .slide .txt h2 { width:300px; height:30px; text-align:center; background:url(../images/underline.png) no-repeat 50% 100%; margin:0 auto; }
             .container .main .slide .txt p { text-align:center; font-size:14px; line-height:1.4; margin:20px 0; }
@@ -55,7 +56,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .slide .btn_g .btn2 { margin:0 7px; }
 
     /* value */
-    .container .main .value { width:100%; padding:64px 0 24px; box-sizing:border-box; }
+    .container .main .value { padding:64px 0 24px; box-sizing:border-box; }
         .container .main .value ul { display:flex; flex-wrap:wrap; width:100%; }
             .container .main .value ul li { width:100%; height:197px; border-bottom:1px solid #e8e8e8; padding:75px 70px; box-sizing:border-box; }
                 .container .main .value ul li div { margin:0 auto; }
@@ -71,7 +72,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .value ul li .improve { width:270px; background:url(../images/improve.png) no-repeat; background-size:54px; }
 
     /* history */
-    .container .main .history { width:100%; background-color:#f6f6f6; }
+    .container .main .history { background-color:#f6f6f6; }
         .container .main .history .corp { width:100%; height:411px; background:url(../images/cor_M.jpg) no-repeat 50% 50%; background-size:cover; }
         .container .main .history > img { display:none; }
 
@@ -85,29 +86,30 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:40px; background-color:rgb(0, 100, 230, 0.9); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
     /* artist */
-    .container .main .artist { width:100%; padding:81px 53px 130px; box-sizing:border-box; position:relative; }
+    .container .main .artist { margin:81px auto 130px; box-sizing:border-box; overflow:hidden; }
         .container .main .artist h2 { margin-bottom:81px; }
 
-        .container .main .artist ul { width:269px; margin:0 auto; display:flex; flex-wrap:wrap; }
-            .container .main .artist ul li { width:128px; height:112px; border:1px solid #d8d8d8;}
-                .container .main .artist ul li a { display:block; width:100%; height:100%;  }
+        .container .main .artist ul { width:100%; display:flex; flex-wrap:wrap; justify-content:center; }
+            .container .main .artist ul li { width:128px; height:112px; border:1px solid #d8d8d8; margin:0; margin-bottom:8px; }
+            .container .main .artist ul li:nth-child(odd) { margin-right:9px; }
+                .container .main .artist ul li a { display:block; width:100%; height:100%; }
 
-            .container .main .artist ul .jyp { margin:0 9px 8px 0; background:url(../images/jyp.png) no-repeat 50% 50%; background-size:50px; }
+            .container .main .artist ul .jyp { background:url(../images/jyp.png) no-repeat 50% 50%; background-size:50px; }
             .container .main .artist ul .twopm { background:url(../images/2pm.png) no-repeat 50% 50%; background-size:82px; }
-            .container .main .artist ul .jj { margin:0 9px 8px 0; background:url(../images/jj.png) no-repeat 50% 50%; background-size:61px; }
+            .container .main .artist ul .jj { background:url(../images/jj.png) no-repeat 50% 50%; background-size:61px; }
             .container .main .artist ul .got7 { background:url(../images/got7.png) no-repeat 50% 50%; background-size:80px; }
-            .container .main .artist ul .twice { margin:0 9px 8px 0; background:url(../images/twice.png) no-repeat 50% 50%; background-size:51px; }
+            .container .main .artist ul .twice { background:url(../images/twice.png) no-repeat 50% 50%; background-size:51px; }
             .container .main .artist ul .day6 { background:url(../images/day6.png) no-repeat 50% 50%; background-size:87px; }
-            .container .main .artist ul .straykids { margin:0 9px 8px 0; background:url(../images/straykids.png) no-repeat 50% 50%; background-size:111px; }
+            .container .main .artist ul .straykids { background:url(../images/straykids.png) no-repeat 50% 50%; background-size:111px; }
             .container .main .artist ul .itzy { background:url(../images/itzy.png) no-repeat 50% 50%; background-size:45px; }
-            
-            .container .main .artist .btn_g { display:flex; width:45px; margin:0 auto; position:absolute; bottom:90px; right:50%; transform:translateX(50%); }
-                .container .main .artist .btn_g div { width:19px; height:5px; cursor:pointer; }
-                .container .main .artist .btn_g .btn1 { background-color:#348ccc; }
-                .container .main .artist .btn_g .btn2 { margin:0 7px;  background-color:#d2d2d2; }
+                
+            .container .main .artist .btn_g { margin-top:40px; display:flex; justify-content:center; align-items:center; width:100%; }
+                .container .main .artist .btn_g div { width:19px; height:5px; cursor:pointer; background-color:#d2d2d2; }
+                .container .main .artist .btn_g div.on { background-color:#348ccc; }
+                .container .main .artist .btn_g .btn2 { margin-left:7px; }
 
     /* multi */
-    .container .main .multi { width:100%; background-color:#f7f7f7; padding:75px 0; box-sizing:border-box; }
+    .container .main .multi { background-color:#f7f7f7; padding:75px 0; box-sizing:border-box; }
         .container .main .multi h2 { margin-bottom:75px; }
 
         .container .main .multi ul { width:100%; display:flex; flex-direction:column; align-content:center; }
@@ -139,7 +141,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .multi ul .bts a p:last-of-type { width:107px; }
 
     /* notice */
-    .container .main .notice { width:100%; padding:75px 23px; box-sizing:border-box; }
+    .container .main .notice { padding:75px 23px; box-sizing:border-box; }
         .container .main .notice h2 { margin-bottom:75px; }
 
         .container .main .notice ul { width:100%; }
@@ -150,7 +152,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
                 .container .main .notice ul li p:last-of-type { display:none; }
 
     /* recruit */
-    .container .main .recruit { width:100%; background:url(../images/recruit.jpg) no-repeat 45% 0; background-size:cover; padding:75px 0; box-sizing: border-box; }
+    .container .main .recruit { background:url(../images/recruit.jpg) no-repeat 45% 0; background-size:cover; padding:75px 0; box-sizing: border-box; }
         .container .main .recruit h2 { color:#fff; margin-bottom:75px; }
         .container .main .recruit p { color:#fff; padding:0 58px 78px; box-sizing:border-box; text-align:center; font-size:14px; }
         .container .main .recruit .hidden { display:none; }
@@ -160,7 +162,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .recruit a:last-child { margin-top:10px; background-color:rgba(255, 255, 255, 0.7); border:1px solid rgba(255, 255, 255, 0); color:#0063e6; }
 
     /* info */
-    .container .main .info { width:100%; padding:80px 0; box-sizing:border-box; background-color:#f7f7f7; }
+    .container .main .info { padding:80px 0; box-sizing:border-box; background-color:#f7f7f7; }
         .container .main .info ul { width:100%; display:flex; flex-direction:column; align-content:center; }
             .container .main .info ul li h2 { text-align:center; color:#0063e6; margin-bottom:37px; }
             .container .main .info ul p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
