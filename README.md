@@ -7,8 +7,8 @@
 - 비상업적 용도로 만들어진 포트폴리오용 사이트입니다.
 
 ### available pages
-- 웹사이트 첫 페이지 (메인)
-- 회사 소개 페이지 (COMPANY 카테고리)
+- [웹사이트 첫 페이지](https://absolutelyfullycapable.github.io/jyp)
+- [회사 소개 페이지](https://absolutelyfullycapable.github.io/jyp/about.html)
 
 ### production period
 - 2020.08.12 - 2020.08.18
