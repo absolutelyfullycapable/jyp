@@ -86,10 +86,10 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:40px; background-color:rgb(0, 100, 230, 0.9); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
     /* artist */
-    .container .main .artist { margin:81px auto 130px; box-sizing:border-box; overflow:hidden; }
+    .container .main .artist { padding:81px 53px 130px; box-sizing:border-box; overflow:hidden; }
         .container .main .artist h2 { margin-bottom:81px; }
 
-        .container .main .artist ul { width:100%; display:flex; flex-wrap:wrap; justify-content:center; }
+        .container .main .artist ul { margin:0 auto; width:100%; display:flex; flex-wrap:wrap; justify-content:center; }
             .container .main .artist ul li { width:128px; height:112px; border:1px solid #d8d8d8; margin:0; margin-bottom:8px; }
             .container .main .artist ul li:nth-child(odd) { margin-right:9px; }
                 .container .main .artist ul li a { display:block; width:100%; height:100%; }
@@ -330,11 +330,13 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .history .corp_txt a:hover { transition:0.7s; background-color:rgba(0, 100, 230, 0.123); color:#348ccc }
 
     /* artist */
-    .container .main .artist { padding:188px 0 300px; }
+    .container .main .artist { padding:188px 0 200px; }
         .container .main .artist h2 { margin-bottom:135px; }
 
         .container .main .artist ul { width:1191px; margin:0 auto; }
             .container .main .artist ul li { width:280px; height:244px; }
+            .container .main .artist ul li:nth-child(odd) { margin-right:21px; }
+            
             .container .main .artist ul .jyp { margin:0 21px 18px 0; background-size:100px; }
             .container .main .artist ul .jyp:hover { animation:hover1 1s alternate forwards; }
                 @keyframes hover1 { 0% { background:url(../images/jyp_hover.jpg) no-repeat 60% 50%; background-size:cover; opacity:0; } 100% { background:url(../images/jyp_hover.jpg) no-repeat 60% 50%; background-size:cover; opacity:1; } }
@@ -368,7 +370,8 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .artist ul .itzy { margin:0; background-size:100px; }
             .container .main .artist ul .itzy:hover { animation:hover8 1s alternate forwards; }
                 @keyframes hover8 { 0% { background:url(../images/itzy_hover.jpg) no-repeat 20% 0; background-size:cover; opacity:0; } 100% { background:url(../images/itzy_hover.jpg) no-repeat 20% 0; background-size:cover; opacity:1; } }
-            .container .main .artist .btn_g { bottom:180px; }
+
+            .container .main .artist .btn_g { margin-top:100px; }
 
     /* multi */
     .container .main .multi { padding:188px 0; }
