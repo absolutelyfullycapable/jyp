@@ -83,7 +83,8 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .history .corp_txt p { font-size:13.5px; line-height:1.5; margin:35px 0; }
                 .container .main .history .corp_txt p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
 
-            .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:40px; background-color:rgb(0, 100, 230, 0.9); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+            .container .main .history .corp_txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:116px; height:40px; border:1px solid #0063e6; color:#0063e6; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; transition:0.3s; }
+            .container .main .history .corp_txt a:hover, .container .main .history .corp_txt a:active { background-color:#0063e6; color:#fff; }
 
     /* artist */
     .container .main .artist { padding:81px 53px 130px; box-sizing:border-box; overflow:hidden; }
@@ -102,11 +103,13 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .artist ul .day6 { background:url(../images/day6.png) no-repeat 50% 50%; background-size:87px; }
             .container .main .artist ul .straykids { background:url(../images/straykids.png) no-repeat 50% 50%; background-size:111px; }
             .container .main .artist ul .itzy { background:url(../images/itzy.png) no-repeat 50% 50%; background-size:45px; }
+            .container .main .artist ul .bernard { background:url(../images/bernard.png) no-repeat 50% 50%; background-size:110px; height:0; opacity:0; }
+            .container .main .artist ul .jus2 { background:url(../images/jus2.png) no-repeat 50% 50%; background-size:90px; height:0; opacity:0; }
+            .container .main .artist ul .boy_story { background:url(../images/boy_story.png) no-repeat 50% 50%; background-size:55px; height:0; opacity:0; }
+            .container .main .artist ul .niziU { background:url(../images/niziU.png) no-repeat 50% 50%; background-size:60px; height:0; opacity:0; }
                 
-            .container .main .artist .btn_g { margin-top:40px; display:flex; justify-content:center; align-items:center; width:100%; }
-                .container .main .artist .btn_g div { width:19px; height:5px; cursor:pointer; background-color:#d2d2d2; }
-                .container .main .artist .btn_g div.on { background-color:#348ccc; }
-                .container .main .artist .btn_g .btn2 { margin-left:7px; }
+            .container .main .artist .more { margin:40px auto 0; font-size:14px; font-weight:500; text-align:center; line-height:40px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; width:116px; height:40px; border-radius:50px; border:1px solid #0063e6; color:#0063e6; cursor:pointer; transition:0.3s; }
+            .container .main .artist .more:hover, .container .main .artist .more:active { background-color:#0063e6; color:#fff; }
 
     /* multi */
     .container .main .multi { background-color:#f7f7f7; padding:75px 0; box-sizing:border-box; }
@@ -197,7 +200,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
         
 /**** tablet ****/
-@media (min-width:767px) {
+@media (min-width:768px) {
     /** main **/
     .container .main { width:100%; }
 
@@ -225,7 +228,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
     /* artists */
     .container .main .artist ul { width:547px; }
-        .container .main .artist ul .twopm, .container .main .artist ul .day6 { margin-right:9px; }
+        .container .main .artist ul li:nth-child(4n+2) { margin-right:9px; }
 
     /* multi */
     .container .main .multi { width:100%; }
@@ -298,8 +301,8 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .slide .txt p:first-of-type { display:none; }
         .container .main .slide .txt .hidden { display:block; font-size:20px; margin:35px 0; }
 
-        .container .main .slide .txt a { font-size:19px; font-weight:600; width:273px; height:72px; }
-        .container .main .slide .txt a:hover { transition:0.7s; background-color:#fff; color:#348ccc; }
+        .container .main .slide .txt a { font-size:19px; font-weight:600; width:273px; height:72px; transition:0.3s; }
+        .container .main .slide .txt a:hover { background-color:#fff; color:#348ccc; }
 
         .container .main .slide .btn_g { width:95px; }
             .container .main .slide .btn_g div { width:25px; height:8px; }
@@ -326,52 +329,105 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .history .corp_txt h2 { font-size:70px; }
             .container .main .history .corp_txt p { font-size:20px; margin:80px 0; }
             .container .main .history .corp_txt p span { font-weight:500; }
-            .container .main .history .corp_txt a { width:250px; height:65px; font-size:20px; }
-            .container .main .history .corp_txt a:hover { transition:0.7s; background-color:rgba(0, 100, 230, 0.123); color:#348ccc }
+            .container .main .history .corp_txt a { width:250px; height:65px; font-size:20px; transition:0.4s; }
 
     /* artist */
     .container .main .artist { padding:188px 0 200px; }
         .container .main .artist h2 { margin-bottom:135px; }
 
         .container .main .artist ul { width:1191px; margin:0 auto; }
-            .container .main .artist ul li { width:280px; height:244px; }
+            .container .main .artist ul li { width:280px; height:244px; margin-bottom:18px; }
             .container .main .artist ul li:nth-child(odd) { margin-right:21px; }
+            .container .main .artist ul li:nth-child(4n+2) { margin-right:21px; }
             
-            .container .main .artist ul .jyp { margin:0 21px 18px 0; background-size:100px; }
+            .container .main .artist ul .jyp { background-size:100px; }
             .container .main .artist ul .jyp:hover { animation:hover1 1s alternate forwards; }
-                @keyframes hover1 { 0% { background:url(../images/jyp_hover.jpg) no-repeat 60% 50%; background-size:cover; opacity:0; } 100% { background:url(../images/jyp_hover.jpg) no-repeat 60% 50%; background-size:cover; opacity:1; } }
+                @keyframes hover1 {
+                    0% { background:url(../images/jyp_hover.jpg) no-repeat 60% 50%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/jyp_hover.jpg) no-repeat 60% 50%; background-size:cover; opacity:1; }
+                }
 
-            .container .main .artist ul .twopm { margin:0 21px 18px 0; background-size:180px; }
+            .container .main .artist ul .twopm { background-size:180px; }
             .container .main .artist ul .twopm:hover { animation:hover2 1s alternate forwards; }
-                @keyframes hover2 { 0% { background:url(../images/2pm_hover.jpg) no-repeat 60% 100%; background-size:cover; opacity:0; } 100% { background:url(../images/2pm_hover.jpg) no-repeat 60% 100%; background-size:cover; opacity:1; } }
+                @keyframes hover2 {
+                    0% { background:url(../images/2pm_hover.jpg) no-repeat 60% 100%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/2pm_hover.jpg) no-repeat 60% 100%; background-size:cover; opacity:1; }
+                }
 
-            .container .main .artist ul .jj { margin:0 21px 18px 0; background-size:134px; }
+            .container .main .artist ul .jj { background-size:134px; }
             .container .main .artist ul .jj:hover { animation:hover3 1s alternate forwards; }
-                @keyframes hover3 { 0% { background:url(../images/jj_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; } 100% { background:url(../images/jj_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; } }
+                @keyframes hover3 {
+                    0% { background:url(../images/jj_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/jj_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; }
+                }
 
-            .container .main .artist ul .got7 { margin:0 0 18px 0; background-size:173px; }
+            .container .main .artist ul .got7 { background-size:173px; }
             .container .main .artist ul .got7:hover { animation:hover4 1s alternate forwards; }
-                @keyframes hover4 { 0% { background:url(../images/got7_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; } 100% { background:url(../images/got7_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; } }
+                @keyframes hover4 {
+                    0% { background:url(../images/got7_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/got7_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; }
+                }
 
 
-            .container .main .artist ul .twice { margin:0 21px 0 0; background-size:111px; }
+            .container .main .artist ul .twice { background-size:111px; }
             .container .main .artist ul .twice:hover { animation:hover5 1s alternate forwards; }
-                @keyframes hover5 { 0% { background:url(../images/twice_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; } 100% { background:url(../images/twice_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; } }
+                @keyframes hover5 {
+                    0% { background:url(../images/twice_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/twice_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; }
+                }
 
 
-            .container .main .artist ul .day6 { margin:0 21px 0 0; background-size:189px; }
+            .container .main .artist ul .day6 { background-size:189px; }
             .container .main .artist ul .day6:hover { animation:hover6 1s alternate forwards; }
-                @keyframes hover6 { 0% { background:url(../images/day6_hover.jpg) no-repeat 50% 100%; background-size:cover; opacity:0; } 100% { background:url(../images/day6_hover.jpg) no-repeat 50% 100%; background-size:cover; opacity:1; } }
+                @keyframes hover6 {
+                    0% { background:url(../images/day6_hover.jpg) no-repeat 50% 100%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/day6_hover.jpg) no-repeat 50% 100%; background-size:cover; opacity:1; }
+                }
 
-            .container .main .artist ul .straykids { margin:0 21px 0 0; background-size:241px; }
+            .container .main .artist ul .straykids { background-size:241px; }
             .container .main .artist ul .straykids:hover { animation:hover7 1s alternate forwards; }
-                @keyframes hover7 { 0% { background:url(../images/straykids_hover.jpg) no-repeat 20% 50%; background-size:cover; opacity:0; } 100% { background:url(../images/straykids_hover.jpg) no-repeat 20% 50%; background-size:cover; opacity:1; } }
+                @keyframes hover7 {
+                    0% { background:url(../images/straykids_hover.jpg) no-repeat 20% 50%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/straykids_hover.jpg) no-repeat 20% 50%; background-size:cover; opacity:1; }
+                }
 
-            .container .main .artist ul .itzy { margin:0; background-size:100px; }
+            .container .main .artist ul .itzy { background-size:100px; }
             .container .main .artist ul .itzy:hover { animation:hover8 1s alternate forwards; }
-                @keyframes hover8 { 0% { background:url(../images/itzy_hover.jpg) no-repeat 20% 0; background-size:cover; opacity:0; } 100% { background:url(../images/itzy_hover.jpg) no-repeat 20% 0; background-size:cover; opacity:1; } }
+                @keyframes hover8 {
+                    0% { background:url(../images/itzy_hover.jpg) no-repeat 20% 0; background-size:cover; opacity:0; }
+                    100% { background:url(../images/itzy_hover.jpg) no-repeat 20% 0; background-size:cover; opacity:1; }
+                }
 
-            .container .main .artist .btn_g { margin-top:100px; }
+            .container .main .artist ul .bernard { background-size:165px; }
+            .container .main .artist ul .bernard:hover { animation:hover9 1s alternate forwards; }
+                @keyframes hover9 {
+                    0% { background:url(../images/bernard_hover.png) no-repeat 50% 50%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/bernard_hover.png) no-repeat 50% 50%; background-size:cover; opacity:1; }
+                }
+
+            .container .main .artist ul .jus2 { background-size:140px; }
+            .container .main .artist ul .jus2:hover { animation:hover10 1s alternate forwards; }
+                @keyframes hover10 {
+                    0% { background:url(../images/jus2_hover.jpg) no-repeat 50% 50%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/jus2_hover.jpg) no-repeat 50% 50%; background-size:cover; opacity:1; }
+                }
+
+            .container .main .artist ul .boy_story { background-size:90px; }
+            .container .main .artist ul .boy_story:hover { animation:hover11 1s alternate forwards; }
+                @keyframes hover11 {
+                    0% { background:url(../images/boy_story_hover.png) no-repeat 50% 50%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/boy_story_hover.png) no-repeat 50% 50%; background-size:cover; opacity:1; }
+                }
+
+            .container .main .artist ul .niziU { background-size:100px; }
+            .container .main .artist ul .niziU:hover { animation:hover12 1s alternate forwards; }
+                @keyframes hover12 {
+                    0% { background:url(../images/niziU_hover.png) no-repeat 50% 50%; background-size:cover; opacity:0; }
+                    100% { background:url(../images/niziU_hover.png) no-repeat 50% 50%; background-size:cover; opacity:1; }
+                }
+
+
+            .container .main .artist .more { width:250px; height:65px; line-height:65px; font-size:20px; margin-top:100px; }
 
     /* multi */
     .container .main .multi { padding:188px 0; }
@@ -424,8 +480,9 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .recruit .hidden { display:block; font-size:25px; }
         .container .main .recruit .hidden span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
 
-        .container .main .recruit a:hover { transition:0.7s; background-color:#fff; border:1px solid #fff; color:#0063e6; }
-        .container .main .recruit a:last-child:hover { transition:0.7s; background-color:#fff; color:#0063e6; }
+        .container .main .recruit a, .container .main .recruit a:last-child { transition:0.3s; }
+        .container .main .recruit a:hover { background-color:#fff; border:1px solid #fff; color:#0063e6; }
+        .container .main .recruit a:last-child:hover { background-color:#fff; color:#0063e6; }
         .container .main .recruit a, .container .main .recruit a:last-child { width:273px; height:72px; font-size:20px; }
 
     /* info */
