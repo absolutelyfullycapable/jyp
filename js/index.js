@@ -15,7 +15,6 @@ $(function() {
     });
 
     // artist section의 view more 버튼 동작 애니메이션
-    
     $('#artist .more').on('click', function() {
         var wd = $(window).width();
         if(wd > 0 && wd < 1280) {
