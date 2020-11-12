@@ -13,4 +13,10 @@ $(function() {
     $('nav div img').on('click', function() {
         $('nav').removeClass('show');
     });
+
+    // .lang 부분 클릭 애니메이션
+    $('.lang li').on("click", function() {
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+    });
 });

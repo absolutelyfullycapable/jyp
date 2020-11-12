@@ -99,16 +99,15 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         
         .container header .nav_PC { display:flex; width:30%; background-color:transparent; position:absolute; top:50%; left:280px; transform:translateY(-50%); z-index:999; }
             .container header .nav_PC li a { display:block; width:100%; padding:10px; margin-left:74px; box-sizing:border-box; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:14px; text-align:left; transition:0.2s; }
+            .container header .nav_PC li:first-child:hover a { color:#348ccc; }
 
         .container header .lang { display:flex; position:absolute; top:50%; right:217px; transform:translateY(-50%); }
             .container header .lang li { display:flex; justify-content:center; align-items:center; font-size:12px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
             .container header .lang li:after { content:"|"; margin:0 15px; font-weight:300; }
-
             .container header .lang li:last-child:after { display:none; }
                 .container header .lang li a { display:block; transition:0.2s; }
-                .container header .lang li:first-child a { font-weight:600; color:#348ccc; }
-
-        .container header .nav_PC li:hover a, .container header .lang li:hover a { color:#348ccc; }
+                .container header .lang li:hover a { color:#348ccc; }
+                .container header .lang li.on a { font-weight:600; color:#348ccc; }
 
         .container header .mobile_btn { display:none; }
 

@@ -14,6 +14,12 @@ $(function() {
         $('nav').removeClass('show');
     });
 
+    // .lang 부분 클릭 애니메이션
+    $('.lang li').on("click", function() {
+        $(this).siblings().removeClass('on');
+        $(this).addClass('on');
+    });
+
     // artist section의 view more 버튼 동작 애니메이션
     $('#artist .more').on('click', function() {
         var wd = $(window).width();
