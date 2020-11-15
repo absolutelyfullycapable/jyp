@@ -38,56 +38,60 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container nav ul li { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:20px; margin-bottom:30px; }
                 .container nav ul li a { color:#fff; }
 
-/** main **/
-.container .main { width:100%; }
-    .container .main section p { font-size:14px; }
-    .container .main section .hidden { display:none; }
-        .container .main section p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+    /** nav back **/
+    .container .nav_back { position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:-1; background-color:#000; opacity:0; transition:0.3s; }
+    .container .nav_back.show { z-index:99; opacity:0.4; }
 
-    /* main image */
-    .container .main .main_img { width:100%; height:447px; background:url(../images/sub_main.jpg) no-repeat 50% 50%; background-size:cover; display:flex; justify-content:center; align-items:center; }
-        .container .main .main_img h2 { font-size:35px; color:#fff; background:url(../images/underline.png) no-repeat 0 100%; line-height:1.5; }
+    /** main **/
+    .container .main { width:100%; }
+        .container .main section p { font-size:14px; }
+        .container .main section .hidden { display:none; }
+            .container .main section p span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
 
-    /* main txt */
-    .container .main .txt1 { padding:86px 30px 78px; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:34px; }
-        .container .main .txt1 h2 { color:#0063e6; background:url(../images/sub_h2.png) no-repeat 50% 0; background-size:313px; font-size:23px; margin-bottom:70px; }
-        .container .main .txt1 > p { margin-bottom:30px; }
-        .container .main .txt1 > p:nth-of-type(3) { margin-bottom:0; }
+        /* main image */
+        .container .main .main_img { width:100%; height:447px; background:url(../images/sub_main.jpg) no-repeat 50% 50%; background-size:cover; display:flex; justify-content:center; align-items:center; }
+            .container .main .main_img h2 { font-size:35px; color:#fff; background:url(../images/underline.png) no-repeat 0 100%; line-height:1.5; }
 
-        .container .main .txt1 .goal { margin:70px 0; }
-            .container .main .txt1 .goal > div { display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto; width:180px; height:180px; border-radius:50%; border:1px solid #0063e6; }
-                .container .main .txt1 .goal > div p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; font-size:15px; }
-                .container .main .txt1 .goal > div p:last-of-type { font-size:13px; }
-            .container .main .txt1 .goal .act, .container .main .txt1 .goal .improve { margin-top:-30px; }
-                .container .main .txt1 .goal .improve p:first-of-type { margin-top:15px; }
-                .container .main .txt1 .goal .improve .hidden { display:none; }
+        /* main txt */
+        .container .main .txt1 { padding:86px 30px 78px; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:34px; }
+            .container .main .txt1 h2 { color:#0063e6; background:url(../images/sub_h2.png) no-repeat 50% 0; background-size:313px; font-size:23px; margin-bottom:70px; }
+            .container .main .txt1 > p { margin-bottom:30px; }
+            .container .main .txt1 > p:nth-of-type(3) { margin-bottom:0; }
 
-            .container .main .txt1 .goal > img { display:none; }
+            .container .main .txt1 .goal { margin:70px 0; }
+                .container .main .txt1 .goal > div { display:flex; flex-direction:column; justify-content:center; align-items:center; margin:0 auto; width:180px; height:180px; border-radius:50%; border:1px solid #0063e6; }
+                    .container .main .txt1 .goal > div p:first-of-type { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; font-size:15px; }
+                    .container .main .txt1 .goal > div p:last-of-type { font-size:13px; }
+                .container .main .txt1 .goal .act, .container .main .txt1 .goal .improve { margin-top:-30px; }
+                    .container .main .txt1 .goal .improve p:first-of-type { margin-top:15px; }
+                    .container .main .txt1 .goal .improve .hidden { display:none; }
 
-    .container .main .txt2 { padding:78px 30px; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:34px; }
-        .container .main .txt2 p { margin-bottom:78px; }
-        .container .main .txt2 p:nth-of-type(3) { margin-bottom:0; }
+                .container .main .txt1 .goal > img { display:none; }
 
-    .container .main .txt3 { padding:78px 30px 86px; box-sizing:border-box; }
-        .container .main .txt3 p { margin-bottom:78px; }
-        .container .main .txt3 img { width:123px; }
+        .container .main .txt2 { padding:78px 30px; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:34px; }
+            .container .main .txt2 p { margin-bottom:78px; }
+            .container .main .txt2 p:nth-of-type(3) { margin-bottom:0; }
+
+        .container .main .txt3 { padding:78px 30px 86px; box-sizing:border-box; }
+            .container .main .txt3 p { margin-bottom:78px; }
+            .container .main .txt3 img { width:123px; }
 
 
-/** footer **/
-.container footer { width:100%; padding:30px 25px; box-sizing:border-box; font-size:14px; background-color:#f9f9f9; }
-        .container footer ul { display:flex; }
-            .container footer ul li { margin-right:25px; }
-                .container footer ul li a { font-weight:bold; }
-                .container footer ul li a:hover { text-decoration:underline; }
-        .container footer .jyp_link { margin-bottom:30px; }
-            .container footer .jyp_link li a { color:#0063e6; }
-        
-        .container footer p { text-align:left; }
-        .container footer p:first-of-type { margin-bottom:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; line-height:1.5; }
-            .container footer p:first-of-type span { color:#0063e6; }
-        
-        .container footer p:last-of-type { color:rgb(136, 136, 136); line-height:1.5; margin-bottom:30px; }
-            .container footer p:last-of-type span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
+    /** footer **/
+    .container footer { width:100%; padding:30px 25px; box-sizing:border-box; font-size:14px; background-color:#f9f9f9; }
+            .container footer ul { display:flex; }
+                .container footer ul li { margin-right:25px; }
+                    .container footer ul li a { font-weight:bold; }
+                    .container footer ul li a:hover { text-decoration:underline; }
+            .container footer .jyp_link { margin-bottom:30px; }
+                .container footer .jyp_link li a { color:#0063e6; }
+            
+            .container footer p { text-align:left; }
+            .container footer p:first-of-type { margin-bottom:20px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; line-height:1.5; }
+                .container footer p:first-of-type span { color:#0063e6; }
+            
+            .container footer p:last-of-type { color:rgb(136, 136, 136); line-height:1.5; margin-bottom:30px; }
+                .container footer p:last-of-type span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:400; }
 
 
 /**** PC ****/

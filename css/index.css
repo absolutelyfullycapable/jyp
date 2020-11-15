@@ -37,6 +37,10 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container nav ul li { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:600; font-size:20px; margin-bottom:30px; }
                 .container nav ul li a { color:#fff; }
 
+    /** nav back **/
+    .container .nav_back { position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:-1; background-color:#000; opacity:0; transition:0.3s; }
+    .container .nav_back.show { z-index:99; opacity:0.4; }
+
     /** main **/
     .container .main section { width:100%; }
         .container .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
