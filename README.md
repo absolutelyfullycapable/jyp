@@ -1,4 +1,4 @@
-# Portfolio Work - 'JYP'
+# Portfolio Work - 'JYP Entertainment'
 
 ### about
 - 이곳은 **개인 포트폴리오 작업물 - 'JYP Entertainment' 사이트 저장소**입니다.
