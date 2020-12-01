@@ -46,18 +46,37 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
 
     /* slide  */
-    .container .main .slide { height:680px; background:url(../images/slide.jpg) no-repeat 50% 5%; background-size:1710px 1140px; display:flex; justify-content:center; align-items:center; position:relative; }
-        .container .main .slide .txt { width:80%; color:#fff; }
-            .container .main .slide .txt h2 { width:300px; height:30px; text-align:center; background:url(../images/underline.png) no-repeat 50% 100%; margin:0 auto; }
-            .container .main .slide .txt p { text-align:center; font-size:14px; line-height:1.4; margin:20px 0; }
-            .container .main .slide .txt span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
-            .container .main .slide .txt .hidden { display:none; }
-            .container .main .slide .txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:140px; height:40px; margin:0 auto; background-color:rgba(255, 255, 255, 0.235); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+    .container .main .slide { height:680px; }
+        .container .main .slide .swiper-slide { display:flex; justify-content:center; align-items:center; }
+            .container .main .slide .swiper-slide .txt { width:100%; color:#fff; position:relative; z-index:1; }
+                .container .main .slide .swiper-slide .txt h2 { height:30px; text-align:center; background:url(../images/underline.png) repeat-x 50% 100%; margin:0 auto; }
 
-        .container .main .slide .btn_g { display:flex; width:69px; margin:0 auto; position:absolute; bottom:38px; right:50%; transform:translateX(50%); }
-            .container .main .slide .btn_g div { width:19px; height:6px; background-color:#fff; cursor:pointer; }
-            .container .main .slide .btn_g .btn1 { background-color:#0050be; }
-            .container .main .slide .btn_g .btn2 { margin:0 7px; }
+                .container .main .slide .swiper-slide .txt p { text-align:center; font-size:14px; line-height:1.4; margin:20px 0; }
+                    .container .main .slide .swiper-slide .txt span { font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:300; }
+
+                .container .main .slide .swiper-slide .txt .hidden { display:none; }
+
+                .container .main .slide .swiper-slide .txt a { display:flex; justify-content:center; align-items:center; font-size:14px; width:140px; height:40px; margin:0 auto; background-color:rgba(255, 255, 255, 0.235); color:#fff; border-radius:50px; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",sans-serif; font-weight:500; }
+
+        /* banner 1 */
+        .container .main .slide .banner1 { background:url(../images/slide.jpg) no-repeat 50% 5%; background-size:cover; }
+            .container .main .slide .banner1 .txt h2 { width:300px; }
+            .container .main .slide .banner1 .txt a:active { background-color:#fff; color:#348ccc; }
+        
+        /* banner 2 */
+        .container .main .slide .banner2 { background:url(../images/slide_got7.jpg) no-repeat 50% 0%; background-size:cover; }
+            .container .main .slide .banner2 .txt h2 { width:410px; }
+            .container .main .slide .banner2 .txt a:active { background-color:#fff; color:#495e6a; }
+
+        /* banner 3 */
+        .container .main .slide .banner3 { background:url(../images/slide_twice.jpg) no-repeat 50% 0%; background-size:cover; }
+            .container .main .slide .banner3 .txt h2 { width:310px; }
+            .container .main .slide .banner3 .txt a:active { background-color:#fff; color:#222; }
+
+        .container .main .slide .banner2::after, .container .main .slide .banner3::after { content:''; display:block; position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.15); }
+
+        /* swiper pagination */
+        .container .main .slide .swiper-pagination { margin-bottom:30px; }
 
     /* value */
     .container .main .value { padding:64px 0 24px; box-sizing:border-box; }
@@ -182,7 +201,6 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 .container #map { width:100%; height:300px; } 
 
 
-
 /** footer **/
     .container footer { width:100%; padding:30px 25px; box-sizing:border-box; font-size:14px; }
         .container footer ul { display:flex; }
@@ -296,20 +314,30 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     .container .main section > h2 { font-size:45px; }
 
     /* slide */
-    .container .main .slide { width:100%; height:790px; background-size:cover; position:absolute; top:0; right:0; z-index:1 }
-        .container .main .slide .txt h2 { width:610px; height:60px; background:url(../images/underline.png) repeat-x 50% 100%; font-size:48px; }
-        .container .main .slide .txt p:first-of-type { display:none; }
-        .container .main .slide .txt .hidden { display:block; font-size:20px; margin:35px 0; }
+    .container .main .slide { height:790px; }
+        .container .main .slide .swiper-slide .txt h2 { height:60px; background:url(../images/underline.png) repeat-x 50% 100%; font-size:48px; }
+        .container .main .slide .swiper-slide .txt p:first-of-type { display:none; }
+        .container .main .slide .swiper-slide .txt .hidden, .container .main .slide .banner3 .txt p:first-of-type { display:block; font-size:20px; margin:35px 0; }
 
-        .container .main .slide .txt a { font-size:19px; font-weight:600; width:273px; height:72px; transition:0.3s; }
-        .container .main .slide .txt a:hover { background-color:#fff; color:#348ccc; }
+        .container .main .slide .swiper-slide .txt a { font-size:19px; font-weight:600; width:273px; height:72px; transition:0.3s; }
 
-        .container .main .slide .btn_g { width:95px; }
-            .container .main .slide .btn_g div { width:25px; height:8px; }
-            .container .main .slide .btn_g .btn2 { margin:0 10px; }
+        /* banner 1 */
+        .container .main .slide .banner1 { background:url(../images/slide.jpg) no-repeat 50% 5%; background-size:cover; }
+            .container .main .slide .banner1 .txt h2 { width:610px; }
+            .container .main .slide .banner1 .txt a:hover { background-color:#fff; color:#348ccc; }
+
+        /* banner 2 */
+        .container .main .slide .banner2 { background:url(../images/slide_got7.jpg) no-repeat 50% 100%; background-size:cover; }
+            .container .main .slide .banner2 .txt h2 { width:850px; }
+            .container .main .slide .banner2 .txt a:hover { background-color:#fff; color:#495e6a; }
+
+        /* banner 3 */
+        .container .main .slide .banner3 { background:url(../images/slide_twice.jpg) no-repeat 50% 100%; background-size:cover; }
+            .container .main .slide .banner3 .txt h2 { width:640px; }
+            .container .main .slide .banner3 .txt a:hover { background-color:#fff; color:#222; }
 
     /* value */
-    .container .main .value { margin-top:730px; padding:188px 176px; }
+    .container .main .value { padding:188px 176px; }
         .container .main .value h2 { margin-bottom:135px; }
 
         .container .main .value ul { width:95%; margin:0 auto; }
