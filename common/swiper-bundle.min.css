@@ -18,7 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #89866d
+    --swiper-theme-color: #0050be
 }
 
 .swiper-container {
@@ -284,8 +284,7 @@
     width: 25px;
     height: 5px;
     display: inline-block;
-    background: #000;
-    opacity: .2;
+    background: #fff;
     outline: none;
 }
 
