@@ -42,8 +42,9 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     .container .nav_back.show { z-index:99; opacity:0.4; }
 
     /** main **/
-    .container .main section { width:100%; }
-        .container .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
+    .container .main { width:100%; }
+        .container .main section { width:100%; }
+            .container .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
 
     /* slide  */
     .container .main .slide { height:680px; }
