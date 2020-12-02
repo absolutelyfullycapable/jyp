@@ -65,16 +65,16 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .container .main .slide .banner1 .txt a:active { background-color:#fff; color:#348ccc; }
         
         /* banner 2 */
-        .container .main .slide .banner2 { background:url(../images/slide_got7.jpg) no-repeat 50% 0%; background-size:cover; }
+        .container .main .slide .banner2 { background:url(../images/slide_got7_m.jpg) no-repeat 50% 50%; background-size:cover; }
             .container .main .slide .banner2 .txt h2 { width:80%; }
             .container .main .slide .banner2 .txt a:active { background-color:#fff; color:#495e6a; }
 
         /* banner 3 */
-        .container .main .slide .banner3 { background:url(../images/slide_twice.jpg) no-repeat 50% 0%; background-size:cover; }
+        .container .main .slide .banner3 { background:url(../images/slide_twice_m.jpg) no-repeat 50% 50%; background-size:cover; }
             .container .main .slide .banner3 .txt h2 { width:310px; }
             .container .main .slide .banner3 .txt a:active { background-color:#fff; color:#222; }
 
-        .container .main .slide .banner2::after, .container .main .slide .banner3::after { content:''; display:block; position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.15); }
+        .container .main .slide .banner2::after, .container .main .slide .banner3::after { content:''; display:block; position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.2); }
 
         /* swiper pagination */
         .container .main .slide .swiper-pagination { margin-bottom:30px; }
@@ -228,7 +228,15 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .slide .swiper-slide .txt p:first-of-type { display:none; }
         .container .main .slide .swiper-slide .txt .hidden { display:block; }
 
-        .container .main .slide .banner2 .txt h2 { width:420px; }
+        /* banner 1 */
+        .container .main .slide .banner1 { background:url(../images/slide.jpg) no-repeat 50% 50%; background-size:cover; }
+        
+        /* banner 2 */
+        .container .main .slide .banner2 { background:url(../images/slide_got7_t.jpg) no-repeat 50% 50%; background-size:cover; }
+            .container .main .slide .banner2 .txt h2 { width:420px; }
+
+        /* banner 3 */
+        .container .main .slide .banner3 { background:url(../images/slide_twice_t.jpg) no-repeat 50% 50%; background-size:cover; }
 
         /* value */
         .container .main .value { width:100%; padding:64px 20px; box-sizing:border-box; }
