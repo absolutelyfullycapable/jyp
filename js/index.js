@@ -8,12 +8,14 @@ $(function() {
     $('header .mobile_btn').on('click', function() {
         $('nav').addClass('show');
         $('.nav_back').addClass('show');
+        $('html').css('overflow', 'hidden');
     });
 
     // nav 안 X 버튼 누르면 nav 다시 사라짐 + .nav_back 애니메이션
     $('nav div img').on('click', function() {
         $('nav').removeClass('show');
         $('.nav_back').removeClass('show');
+        $('html').css('overflow', 'initial');
     });
 
     // .lang 부분 클릭 애니메이션
