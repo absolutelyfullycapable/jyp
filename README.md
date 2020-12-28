@@ -8,7 +8,7 @@
 
 ### available pages
 - [웹사이트 첫 페이지](https://absolutelyfullycapable.github.io/jyp)
-- [회사 소개 페이지](https://absolutelyfullycapable.github.io/jyp/about.html)
+- [JYP Entertainment 소개 페이지 (COMPANY)](https://absolutelyfullycapable.github.io/jyp/about.html)
 
 ### production period
 - 2020.08.12 - 2020.08.18
