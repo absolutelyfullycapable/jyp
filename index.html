@@ -30,11 +30,13 @@
         <!-- font-family: 'Montserrat', 'Noto Sans KR', sans-serif; -->
         <!-- CSS 연결 -->
         <link rel="stylesheet" href="common/normalize.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="common/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/index.css">
         <!-- JS/jQuery 연결 -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="common/swiper-bundle.min.js"></script>
         <script src="js/index.js"></script>
     </head>
@@ -114,7 +116,7 @@
                 </section> <!-- slide -->
 
                 <section class="value">
-                    <h2>VALUE</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1200">VALUE</h2>
                     <ul>
                         <li>
                             <div class="think">
@@ -147,15 +149,15 @@
                     <div class="corp"></div>
                     <img src="images/connect.png" alt="connect">
                     <div class="corp_txt">
-                        <h2>JYP Ent.<br>History</h2>
-                        <h2 class="hidden">JYP Ent. History</h2>
+                        <h2 data-aos="fade-up" data-aos-duration="1200">JYP Ent.<br>History</h2>
+                        <h2 class="hidden" data-aos="fade-up" data-aos-duration="1200">JYP Ent. History</h2>
                         <p><span>JYP</span> 엔터테인먼트는 그동안 최고 프로듀서 박진영을 필두로<br>가요계를 대표하는 최고 아티스트를 발굴 및 배출해왔습니다.</p>
                         <a href="about.html">more about</a>
                     </div>
                 </section> <!-- history -->
 
                 <section id ="artist" class="artist">
-                    <h2>ARTIST</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1200">ARTIST</h2>
                     <ul>
                         <li class="jyp"><a href="#"></a></li>
                         <li class="twopm"><a href="#"></a></li>
@@ -173,7 +175,7 @@
                 </section> <!-- artist -->
 
                 <section class="multi">
-                    <h2>MULTIMEDIA</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1200">MULTIMEDIA</h2>
                     <ul>
                         <li class="song">
                             <a href="#">
@@ -231,7 +233,7 @@
                 </section> <!-- multi -->
 
                 <section class="notice">
-                    <h2>NOTICE</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1200">NOTICE</h2>
                     <ul>
                         <li>
                             <p>안녕하세요, <span>JYP</span> 엔터테인먼트입니다.</p>
@@ -261,7 +263,7 @@
                 </section> <!-- notice -->
 
                 <section class="recruit">
-                    <h2>RECRUIT</h2>
+                    <h2 data-aos="fade-up" data-aos-duration="1200">RECRUIT</h2>
                     <p><span>JYP</span> 엔터테인먼트와<br>새로운 가치를 함께 만들어갈 인재를 기다립니다.</p>
                     <p class="hidden"><span>JYP</span> 엔터테인먼트와 새로운 가치를 함께 만들어갈 인재를 기다립니다.</p>
                     <a href="#">more about</a>
@@ -307,6 +309,8 @@
         <!-- 카카오맵 script -->
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c4d5bfb2603aff3b88fa2b05fb833783&libraries=services"></script>
         <script>
+            AOS.init();
+            
             var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
                 mapOption = {
                     center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
@@ -341,7 +345,7 @@
                     // 지도의 중심을 결과값으로 받은 위치로 이동시킴
                     map.setCenter(coords);
                 } 
-            });    
+            });
         </script>
     </body>
 </html>
