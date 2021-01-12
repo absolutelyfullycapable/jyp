@@ -115,22 +115,11 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .artist h2 { margin-bottom:81px; }
 
         .container .main .artist ul { margin:0 auto; width:100%; display:flex; flex-wrap:wrap; justify-content:center; }
-            .container .main .artist ul li { width:128px; height:112px; border:1px solid #d8d8d8; margin:0; margin-bottom:8px; }
+            .container .main .artist ul li { width:128px; height:128px; border:1px solid #d8d8d8; margin:0; margin-bottom:8px; }
             .container .main .artist ul li:nth-child(odd) { margin-right:9px; }
-                .container .main .artist ul li a { display:block; width:100%; height:100%; }
-
-            .container .main .artist ul .jyp { background:url(../images/jyp.png) no-repeat 50% 50%; background-size:50px; }
-            .container .main .artist ul .twopm { background:url(../images/2pm.png) no-repeat 50% 50%; background-size:82px; }
-            .container .main .artist ul .jj { background:url(../images/jj.png) no-repeat 50% 50%; background-size:61px; }
-            .container .main .artist ul .got7 { background:url(../images/got7.png) no-repeat 50% 50%; background-size:80px; }
-            .container .main .artist ul .twice { background:url(../images/twice.png) no-repeat 50% 50%; background-size:51px; }
-            .container .main .artist ul .day6 { background:url(../images/day6.png) no-repeat 50% 50%; background-size:87px; }
-            .container .main .artist ul .straykids { background:url(../images/straykids.png) no-repeat 50% 50%; background-size:111px; }
-            .container .main .artist ul .itzy { background:url(../images/itzy.png) no-repeat 50% 50%; background-size:45px; }
-            .container .main .artist ul .bernard { background:url(../images/bernard.png) no-repeat 50% 50%; background-size:110px; }
-            .container .main .artist ul .jus2 { background:url(../images/jus2.png) no-repeat 50% 50%; background-size:90px; }
-            .container .main .artist ul .boy_story { background:url(../images/boy_story.png) no-repeat 50% 50%; background-size:55px; }
-            .container .main .artist ul .niziU { background:url(../images/niziU.png) no-repeat 50% 50%; background-size:60px; }
+                .container .main .artist ul li a { display:block; width:100%; height:100%; position:relative; }
+                    .container .main .artist ul li a img { width:100%; position:absolute; top:0; left:0; }
+                    .container .main .artist ul li a img:last-of-type { opacity:0; }
 
     /* multi */
     .container .main .multi { background-color:#f7f7f7; padding:75px 0; box-sizing:border-box; }
@@ -378,95 +367,13 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         .container .main .artist h2 { margin-bottom:135px; }
 
         .container .main .artist ul { width:1191px; margin:0 auto; }
-            .container .main .artist ul li { width:280px; height:244px; margin-bottom:18px; }
+            .container .main .artist ul li { width:280px; height:280px; margin-bottom:18px; }
             .container .main .artist ul li:nth-child(odd) { margin-right:21px; }
             .container .main .artist ul li:nth-child(4n+2) { margin-right:21px; }
-            
-            .container .main .artist ul .jyp { background-size:100px; }
-            .container .main .artist ul .jyp:hover { animation:hover1 1s alternate forwards; }
-                @keyframes hover1 {
-                    0% { background:url(../images/jyp_hover.jpg) no-repeat 60% 50%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/jyp_hover.jpg) no-repeat 60% 50%; background-size:cover; opacity:1; }
-                }
 
-            .container .main .artist ul .twopm { background-size:180px; }
-            .container .main .artist ul .twopm:hover { animation:hover2 1s alternate forwards; }
-                @keyframes hover2 {
-                    0% { background:url(../images/2pm_hover.jpg) no-repeat 60% 100%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/2pm_hover.jpg) no-repeat 60% 100%; background-size:cover; opacity:1; }
-                }
-
-            .container .main .artist ul .jj { background-size:134px; }
-            .container .main .artist ul .jj:hover { animation:hover3 1s alternate forwards; }
-                @keyframes hover3 {
-                    0% { background:url(../images/jj_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/jj_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; }
-                }
-
-            .container .main .artist ul .got7 { background-size:173px; }
-            .container .main .artist ul .got7:hover { animation:hover4 1s alternate forwards; }
-                @keyframes hover4 {
-                    0% { background:url(../images/got7_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/got7_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; }
-                }
-
-
-            .container .main .artist ul .twice { background-size:111px; }
-            .container .main .artist ul .twice:hover { animation:hover5 1s alternate forwards; }
-                @keyframes hover5 {
-                    0% { background:url(../images/twice_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/twice_hover.jpg) no-repeat 50% 35%; background-size:cover; opacity:1; }
-                }
-
-
-            .container .main .artist ul .day6 { background-size:189px; }
-            .container .main .artist ul .day6:hover { animation:hover6 1s alternate forwards; }
-                @keyframes hover6 {
-                    0% { background:url(../images/day6_hover.jpg) no-repeat 50% 100%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/day6_hover.jpg) no-repeat 50% 100%; background-size:cover; opacity:1; }
-                }
-
-            .container .main .artist ul .straykids { background-size:241px; }
-            .container .main .artist ul .straykids:hover { animation:hover7 1s alternate forwards; }
-                @keyframes hover7 {
-                    0% { background:url(../images/straykids_hover.jpg) no-repeat 20% 50%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/straykids_hover.jpg) no-repeat 20% 50%; background-size:cover; opacity:1; }
-                }
-
-            .container .main .artist ul .itzy { background-size:100px; }
-            .container .main .artist ul .itzy:hover { animation:hover8 1s alternate forwards; }
-                @keyframes hover8 {
-                    0% { background:url(../images/itzy_hover.jpg) no-repeat 20% 0; background-size:cover; opacity:0; }
-                    100% { background:url(../images/itzy_hover.jpg) no-repeat 20% 0; background-size:cover; opacity:1; }
-                }
-
-            .container .main .artist ul .bernard { background-size:165px; }
-            .container .main .artist ul .bernard:hover { animation:hover9 1s alternate forwards; }
-                @keyframes hover9 {
-                    0% { background:url(../images/bernard_hover.png) no-repeat 50% 50%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/bernard_hover.png) no-repeat 50% 50%; background-size:cover; opacity:1; }
-                }
-
-            .container .main .artist ul .jus2 { background-size:140px; }
-            .container .main .artist ul .jus2:hover { animation:hover10 1s alternate forwards; }
-                @keyframes hover10 {
-                    0% { background:url(../images/jus2_hover.jpg) no-repeat 50% 50%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/jus2_hover.jpg) no-repeat 50% 50%; background-size:cover; opacity:1; }
-                }
-
-            .container .main .artist ul .boy_story { background-size:90px; }
-            .container .main .artist ul .boy_story:hover { animation:hover11 1s alternate forwards; }
-                @keyframes hover11 {
-                    0% { background:url(../images/boy_story_hover.png) no-repeat 50% 50%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/boy_story_hover.png) no-repeat 50% 50%; background-size:cover; opacity:1; }
-                }
-
-            .container .main .artist ul .niziU { background-size:100px; }
-            .container .main .artist ul .niziU:hover { animation:hover12 1s alternate forwards; }
-                @keyframes hover12 {
-                    0% { background:url(../images/niziU_hover.png) no-repeat 50% 50%; background-size:cover; opacity:0; }
-                    100% { background:url(../images/niziU_hover.png) no-repeat 50% 50%; background-size:cover; opacity:1; }
-                }
+            .container .main .artist ul li a img { transition:0.2s ease-in; }
+            .container .main .artist ul li:hover a img:first-of-type { opacity:0; }
+            .container .main .artist ul li:hover a img:last-of-type { opacity:1; }
 
     /* multi */
     .container .main .multi { padding:188px 0; }
