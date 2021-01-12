@@ -306,8 +306,8 @@
     width: 25px;
     height: 5px;
     display: inline-block;
-    background: #000;
-    opacity: .2
+    background: #fff;
+    opacity: 1;
 }
 
 button.swiper-pagination-bullet {
