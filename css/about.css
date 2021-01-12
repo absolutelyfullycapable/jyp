@@ -120,7 +120,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     .container .main section .hidden { display:block; }
 
     /* main image */
-    .container .main .main_img { height:612px; background:url(../images/sub_main2.jpg) no-repeat 50% 100%; background-size:cover;}
+    .container .main .main_img { height:612px; background:url(../images/sub_main.jpg) no-repeat 50% 60%; background-size:cover; }
         .container .main .main_img h2 { font-size:80px; background:url(../images/underline.png) repeat-x 0 100%; }
 
     /* main txt */
