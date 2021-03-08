@@ -65,7 +65,6 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
                 .container .main .txt1 .goal .act, .container .main .txt1 .goal .improve { margin-top:-30px; }
                     .container .main .txt1 .goal .improve p:first-of-type { margin-top:15px; }
                     .container .main .txt1 .goal .improve .hidden { display:none; }
-
                 .container .main .txt1 .goal > img { display:none; }
 
         .container .main .txt2 { padding:78px 30px; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:34px; }
@@ -134,8 +133,9 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
                 .container .main .txt1 .goal > div p:first-of-type { font-size:25px; }
                 .container .main .txt1 .goal > div p:last-of-type { font-size:17px; margin-top:10px; }
             .container .main .txt1 .goal .act { margin:0 60px; }
-            .container .main .txt1 .goal .improve p:nth-of-type(2) { display:none; }
-            .container .main .txt1 .goal .improve p:last-of-type { display:block; }
+            .container .main .txt1 .goal .improve { margin-top: 0; } 
+                .container .main .txt1 .goal .improve p:nth-of-type(2) { display:none; }
+                .container .main .txt1 .goal .improve p:last-of-type { display:block; }
 
     .container .main .txt2 { padding:138px 0; box-sizing:border-box; background:url(../images/line.png) no-repeat 50% 100%; background-size:83px; }
         .container .main .txt2 p { margin-bottom:113px; }
