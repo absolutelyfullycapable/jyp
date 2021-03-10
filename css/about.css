@@ -128,7 +128,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
         .container .main .txt1 > p:first-of-type, .container .main .txt1 > p:nth-of-type(2), .container .main .txt1 > p:nth-of-type(4) { display:none; }
 
-        .container .main .txt1 .goal { display:flex; justify-content:center; align-items:center; margin:138px 0; }
+        .container .main .txt1 .goal { max-width:1026px; display:flex; justify-content:center; align-items:center; margin:140px 0; }
             .container .main .txt1 .goal > div { margin:0; width:300px; height:300px; }
                 .container .main .txt1 .goal > div p:first-of-type { font-size:25px; }
                 .container .main .txt1 .goal > div p:last-of-type { font-size:17px; margin-top:10px; }
@@ -155,6 +155,6 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
     /* main txt */
     .container .main .txt1 .goal { position:relative; }
         .container .main .txt1 .goal > img { display:block; width:160px; position:absolute; top:50%; }
-            .container .main .txt1 .goal > img:first-of-type { left:36%; }
-            .container .main .txt1 .goal > img:last-of-type { right:36%; }
+            .container .main .txt1 .goal > img:first-of-type { left:250px; }
+            .container .main .txt1 .goal > img:last-of-type { right:250px; }
 }
