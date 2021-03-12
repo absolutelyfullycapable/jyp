@@ -127,10 +127,13 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
         .main .txt1 > p:first-of-type, .main .txt1 > p:nth-of-type(2), .main .txt1 > p:nth-of-type(4) { display:none; }
 
-        .main .txt1 .goal { max-width:1026px; display:flex; justify-content:center; align-items:center; margin:140px auto; }
+        .main .txt1 .goal { max-width:1026px; display:flex; justify-content:center; align-items:center; margin:140px auto; position:relative; }
             .main .txt1 .goal > div { margin:0; width:300px; height:300px; }
                 .main .txt1 .goal > div p:first-of-type { font-size:25px; }
                 .main .txt1 .goal > div p:last-of-type { font-size:17px; margin-top:10px; }
+            .main .txt1 .goal > img { display:block; width:160px; position:absolute; top:50%; }
+                .main .txt1 .goal > img:first-of-type { left:250px; }
+                .main .txt1 .goal > img:last-of-type { right:250px; }
             .main .txt1 .goal .act { margin:0 60px; }
             .main .txt1 .goal .improve { margin-top: 0; }
                 .main .txt1 .goal .improve p:nth-of-type(2) { display:none; }
