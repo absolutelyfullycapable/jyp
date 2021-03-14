@@ -43,8 +43,8 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
 
     /** main **/
     .main { width:100%; }
-        .main section { width:100%; }
-            .main section > h2 { color:#0063e6; font-weight:900; text-align:center; }
+        section { width:100%; }
+            section > h2 { color:#0063e6; font-weight:900; text-align:center; }
 
     /* slide  */
     .slide { height:680px; }
@@ -311,7 +311,7 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
         header .mobile_btn { display:none; }
 
     /** main **/
-    .main section > h2 { font-size:45px; }
+    section > h2 { font-size:45px; }
 
     /* slide */
     .slide { height:790px; }
@@ -436,8 +436,9 @@ h2 { margin:0; font-family:'Montserrat',"Helvetica Neue","Apple SD Gothic Neo",s
             .info ul li:last-child { width:30%; background-size:55px; }
             .info ul li:first-child p, .info ul li:last-child p { width:100%; margin-left:119px; font-size:20px; }
 
-/** map **/
-#map { height:500px; }
+    /** map **/
+    #map { height:500px; }
 
-/** footer **/
-footer { font-size:15.5px; padding:50px 235px; }
+    /** footer **/
+    footer { font-size:15.5px; padding:50px 235px; }
+}
